@@ -1,0 +1,97 @@
+/* CIT 230 - Assignment Portal CSS */
+/* * is a wildcard referring to all elements. */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    height:100%;
+    
+}
+
+body {
+    width:100%;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Tahoma, Geneva, sans-serif;
+    color:#68727a;
+    background-color: #d5e8fa;
+    background-image: linear-gradient(#d5e8fa 50%, white, #d5e8fa);
+}
+
+h1 {
+    font-size: 2rem;
+    color:white;
+}
+
+h2 {
+    font-size: 1.1rem;
+    text-align: center;
+    border-bottom: 1px solid #8299ad;
+    width:70%
+}
+
+@media only screen and (max-width: 390px) {
+    
+    h2 {
+        font-size: 1rem;
+        width:100%;
+    }
+
+}
+
+
+
+a {
+    color: #32373b; 
+}
+
+a:hover {
+    color: #68727a;
+}
+
+ul {
+    padding-top:1rem;    
+}
+
+main {
+    /* Added this so IE would process it correctly */
+    display:block;
+}
+
+header, main, footer {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    min-width: 314px;
+    border-radius:1em;
+}
+
+/* Used to make it still keep the left and right margin when the viewport touches the sides
+    as margin: auto seems to center but then lose the margin when the sides come in */
+@media only screen and (max-width: 860px) and (min-width: 380px) {
+    
+    header, main, footer {
+        margin:2rem;
+    }
+
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #32373b;
+    color: #9fadba;
+}
+
+header img {
+    width: 30%;
+    height: auto;
+    float: right;
+    vertical-align: top;
+}
+
+footer {
+    font-size: .9rem;
+}
