@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    height: 100%;
+    margin:auto;
+    max-width: 600px;
+}
+
+body {
+    padding:2rem;
+    font-family: Raleway, sans-serif;
+    font-size: 1.2em;
+}
+header {
+    background-image: url(../images/header-clouds.svg);
+    background-color:#0088b2;
+    background-size:100%;
+    background-repeat:no-repeat;
+    position:relative;
+    width:100%;
+}
+
+.logo img {
+    padding-left:20px;
+    padding-top:5px;
+    padding-bottom:4em; /* Used to keep the clouds from covering the motto */
+    width:40%;
+}
+
+.motto {
+    position: absolute;
+    bottom: 0;
+    text-align:center;
+    width:100%;
+    padding-bottom:5px;
+    font-size: 1em;
+    font-style:italic;
+    font-weight:bold;
+    color:white;
+}
+
+h1 {
+    color:#0088b2;
+    text-align: center;
+    padding:1em;
+}
+
+nav {
+    background-color: #ff8103;
+    color:white;
+    width:100%;
+}
+
+nav ul li {
+    width:100%;
+    list-style: none;
+    text-align: center;
+    padding: 0.6rem;
+    margin:0;
+}
+
+nav ul {
+    padding:0;
+    margin:0;
+}
+
+nav ul li.current {
+    background-color:#0088b2;
+}
+

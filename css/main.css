@@ -96,7 +96,3 @@ footer {
     font-size: .9rem; 
 }
 
-/* Used while the links are limited and I don't want the image to go into the footer */
-main {
-    min-height:200px;
-}
