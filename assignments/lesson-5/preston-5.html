@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+	<head>
+		<title>Weather It - Let's weather it together</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Current weather for preston idaho.">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/small-5.css">
+        <link rel="stylesheet" media="screen and (min-width: 670px)" href="css/large-5.css">
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	</head>
+	<body>
+        <header>
+            <div class="logo-grid-container">
+                <div class="logo"><img src="images/logo.svg" alt="Weatherit logo"></div>
+                <div class="current-weather">Current Weather<br><img src="images/wi-partial-cloudy.svg" alt="Current Weather: Partial Cloudy"></div>
+                <!-- <div class="motto-container"> -->
+                <div class="motto"><span class="motto-text"> Let's <strong>weather it</strong> together! &nbsp;</span></div>
+                <!-- </div> -->
+            </div>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#" title="Home">Home</a></li>
+                <li class="active"><a href="#" title="Home">Preston</a></li>
+                <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+                <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+                <li><a href="#" title="Storm Center">Storm Center</a></li>
+                <li><a href="#" title="Gallery">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h1>Preston, Idaho</h1>
+                
+                <div id="weather-summary">
+                    <img class="img__hero" src="images/preston-hero.jpg">
+                    <aside>
+                        <div class="weather-summary-grid">
+                            <div class="weather-summary-title">Weather Summary</div>
+                            <div class="weather-label">
+                                Currently:<br>
+                                High:<br>
+                                Wind Chill:<br>
+                                Humidity:<br>
+                                Wind Speed:
+                            </div>
+                            <div class="weather-value">
+                                Sunny<br>
+                                76&deg; F<br>
+                                76&deg; F<br> 
+                                69%<br>
+                                5 mph
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="forecast">
+                <div id="forecast-grid-container">
+                    <div id="forecast-title">5 Day Forecast</div>
+                    <div id="forecast1h" class="forecast-header">Wed</div>
+                    <div id="forecast1">1</div>
+                    <div id="forecast2h" class="forecast-header">Thu</div>
+                    <div id="forecast2">2</div>
+                    <div id="forecast3h" class="forecast-header">Fri</div>
+                    <div id="forecast3">3</div>
+                    <div id="forecast4h" class="forecast-header">Sat</div>
+                    <div id="forecast4">4</div>
+                    <div id="forecast5h" class="forecast-header">Sun</div>
+                    <div id="forecast5">5</div>
+                </div>
+            </section>
+
+            <article>
+                <div id="article-container">    
+                    <img src="images/article-hiking.jpg">
+                    <h2>Article Title</h2>
+                    <span class="author">by Author</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper 
+                        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie 
+                        consequat, vel illum dolore eu feugiat nulla facilisis at vero.
+                        <a class="button-text" href="">Continue to Full Article</a>
+                    </p>
+                    
+                
+                </div>
+            </article>
+
+        </main>
+
+        <footer>
+            <div class="footer-contact">
+                <div class="contact-info">
+                    <div class="grid-space-company"></div>
+                    <div class="grid-company"><h2>Weather It</h2></div>
+                    <div class="grid-icon-addr"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="grid-addr">30 N 1st E<br>Preston, ID 83263</div>
+                    
+                    <div class="grid-icon-phone"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="grid-phone">999.999.9999</div>
+                    <div class="grid-icon-email"><i class="fas fa-envelope"></i></div>
+                    <div class="grid-email">contact@weatherit.com</div>
+                    <div class="grid-social">
+                        <i class="fab fa-facebook-square color-facebook"></i>
+                        <i class="fab fa-twitter-square color-twitter"></i>
+                        <i class="fab fa-instagram color-instagram"></i>
+                        <i class="fab fa-pinterest-square color-pinterest"></i>
+                        <i class="fas fa-share-alt-square color-share"></i>
+                    </div>
+                </div>
+                <div id="map">Map</div>
+            </div>
+            <div class="copyright">
+                &copy; 2019 Weather It | BYU-Idaho CIT 230 Project | Douglas Tietjen<br>
+                Wednesday, May 22, 2019
+            </div>
+        </footer>
+
+    </body>
+
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbSDAZEmSl0vCn45u8S3yeQoUqlQSKZbo&callback=initMap"></script> -->
+    
+    <script>
+        function toggleMenu() {
+            document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+        }
+
+        // Initialize and add the map
+        function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 42.0970234, lng: -111.875773};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 8, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    
+    
+
+</html>

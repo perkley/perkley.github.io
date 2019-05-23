@@ -1,0 +1,119 @@
+header {
+    background-position: center center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.current-weather {
+    display: block;
+    position: relative;
+    top: -10px;
+    right: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: -5px 5px 20px -10px #000;
+}
+
+.current-weather > img {
+    width: 100px;
+}
+
+nav {
+    background-color: #ff8103;
+}
+
+.navigation li:first-child {
+    display: none;
+}
+
+.navigation li {
+    display: inline-block;
+    background-color: #ff8103;
+    border-bottom: 0;
+}
+
+.navigation li a:hover {
+    background-color: #0088b2;
+}
+
+li.active {
+    background-color:#03c3ff;
+}
+
+
+.weather-summary-title {
+    font-size: 24px;
+}
+
+.weather-label, .weather-value {
+    font-size: 20px;
+}
+
+
+main, footer {
+    max-width: 900px;
+}
+
+/* SHOW FORECAST */
+section#forecast {
+    display:grid;
+    margin-top: 1em;
+}
+#forecast-grid-container {
+    display: grid;
+    grid-template-areas: "fc-title fc-title fc-title fc-title fc-title" 
+                        "fc-1h fc-2h fc-3h fc-4h fc-5h"
+                        "fc-1 fc-2 fc-3 fc-4 fc-5";
+    /* grid-gap: 5px; */
+    margin: auto;
+    min-width: 350px;
+    /* border:1px solid pink; */
+}
+
+#forecast-title {grid-area: fc-title; padding-bottom: 10px; font-weight:}
+#forecast1h {grid-area: fc-1h;}
+#forecast1 {grid-area: fc-1;}
+#forecast2h {grid-area: fc-2h;}
+#forecast2 {grid-area: fc-2;}
+#forecast3h {grid-area: fc-3h;}
+#forecast3 {grid-area: fc-3;}
+#forecast4h {grid-area: fc-4h;}
+#forecast4 {grid-area: fc-4;}
+#forecast5h {grid-area: fc-5h;}
+#forecast5 {grid-area: fc-5;}
+
+#forecast-grid-container > div:not(:first-child) {
+    border: 1px solid #03c3ff;
+    padding: 3px;
+}
+
+.forecast-header {
+    background-color: #0088b2;
+    color: white;
+}
+
+/* ARTICLE */
+
+#article-container img {
+    float: right;
+    width: 50%;
+    max-height: 400px;
+}
+/* article img {
+    width: 30%;
+    height: auto;
+    float: right;
+    vertical-align: top;
+} */
+
+.footer-contact {
+    flex-direction: row;
+}
+
+.contact-info {
+    padding-right: 10px;
+}

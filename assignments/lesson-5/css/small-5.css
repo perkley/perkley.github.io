@@ -1,0 +1,314 @@
+/* ALL */
+* {
+    box-sizing: border-box;
+}
+
+html { 
+    margin: 0 auto;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 1.2rem;
+}
+
+
+
+/* HEADER */
+
+header {
+    background-image: url(../images/header-clouds.svg);
+    background-color:#0088b2;
+    background-size:100vw;
+    background-repeat:no-repeat;
+    width:100%;
+    background-position: top center;
+}
+
+.logo-grid-container {
+    display: grid;
+    grid-template-areas: "logo weatherSummary" "motto motto";
+    justify-content: space-between;
+    grid-gap: 10px;
+    grid-row-gap: 20px;
+    padding: 5px;
+}
+
+.logo {
+    grid-area: logo;
+    text-align: center;    
+}
+
+.current-weather {
+    grid-area: weatherSummary;
+    text-align: right;
+}
+
+.motto {
+    grid-area: motto;
+    text-align: center;
+    font-size: calc(16px + 1vw);
+    font-style: italic;
+    color: white;
+}
+
+.motto-text {
+    background-color: rgba(0,136,178, 0.70);
+    border-radius: 10px;
+}
+
+.logo img {
+    width: 30vw;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 10px;
+}
+
+.current-weather {
+    display: none;
+}
+
+@media only screen and (min-width: 366px) {
+    header {
+        background-position: center center;
+    }
+ }
+
+
+
+/* NAVIGATION */
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation { 
+    list-style: none;
+    text-align: center;
+}
+
+.navigation li:first-child { 
+    display: block;
+    background-color: #ff8103;
+}
+
+.navigation li {
+    display: none;
+    background-color: #0088b2;
+    border-bottom: 1px solid white;
+}
+
+.navigation a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.6rem; 
+}
+
+.navigation a:hover {
+    background-color: #ff8103;
+}
+
+li.active {
+    background-color: #03c3ff;
+}
+
+/* the onclick JS toggles the .responsive class from display none (.navigation li) to 
+    display block because the repsonsive class is added to the end of the class list like this:
+    <ul class="navigation responsive">
+*/
+.responsive li { 
+    display: block;
+}
+
+
+
+/* CONTENT */
+
+main {
+    padding: 0px 5px 0px 5px;
+    margin: auto;
+    max-width: 950px;
+}
+
+main section {
+    text-align: center;
+}
+
+h1 {
+    font-size: calc(24px + 1vw);
+    margin: 0px;
+    color: #0088b2;
+    text-align: center;
+    padding: 5px;
+}
+
+.img__hero {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#weather-summary {
+    position: relative;
+}
+
+#weather-summary aside {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255,255,255,0.85);
+    padding:10px;
+    border:2px solid #0088b2;
+}
+
+.weather-summary-grid {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    grid-gap: 5px;
+}
+
+.weather-summary-title {
+    grid-column: 1 / 4;
+    color: #0088b2;
+    font-size: calc(16px + 1vw);
+    font-weight: 700;
+    border-bottom: 1px solid #0088b2;
+}
+
+.weather-label, .weather-value {
+    font-size: calc(12px + 1vw);
+    line-height: calc(1.1em + 0.5vw);
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.weather-label {
+    text-align: right;
+    color: #0088b2;
+}
+
+.weather-value {
+    text-align: left;
+    color: #b25a01;
+}
+
+section#forecast {
+    display:none;
+}
+
+article {
+    background-color: #0088b2;
+    padding: 1em;
+    margin-top: 1.5rem;
+}
+
+h2 {
+    color: white;
+    margin: 0;
+}
+
+.author {
+    display: block;
+    color: rgba(255,255,255,0.5);
+}
+
+article > p {
+    color: white;
+}
+
+article img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: top left;
+}
+
+.button-text {
+    display: block;
+    background-color: #ff8103;
+    width: max-content;
+    padding: 10px;
+    margin: 20px auto;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    margin: auto;
+    margin-top: 1.5rem;
+    text-align: center;
+    background-color: #0088b2;
+    color: white;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.contact-info {
+    display:grid;
+    grid-template-areas: "spcompany company" 
+                        "iaddr address"
+                        "iaddr address"
+                        "iphone phone"
+                        "iemail email"
+                        "social social";
+    grid-gap: 5px;
+    margin: auto;
+    min-width: 350px;
+}
+
+.grid-space-company {grid-area: spcompany;}
+.grid-company {grid-area: company; text-align: left;}
+.grid-icon-addr {grid-area: iaddr; text-align: right; position: relative; bottom: -6px;}
+.grid-addr {grid-area: address; text-align: left;}
+.grid-icon-phone {grid-area: iphone; text-align: right; position: relative; bottom: -3px;}
+.grid-phone {grid-area: phone; text-align: left;}
+.grid-icon-email {grid-area: iemail; text-align: right; position: relative; bottom: -3px;}
+.grid-email {grid-area: email; text-align: left;}
+.grid-social {
+    grid-area: social;
+    text-align:center;
+    font-size:2em;
+    margin:10px 0px;
+    letter-spacing:5px;
+    background-color:white;
+    border-radius: 10px;
+}
+
+
+#map {
+    height: 200px;
+    width: 100%;
+}
+
+footer > .copyright {
+    background-color: #ff8103;
+    padding: 10px;
+    font-size: 0.7em;
+}
+
+.color-facebook {
+    color: #325094;
+}
+.color-twitter {
+    color: #3ec6ef;
+}
+.color-instagram {
+    color: #35709c;
+}
+.color-share {
+    color: #2bab51;
+}
+.color-pinterest {
+    color: #ce0a30;
+}
