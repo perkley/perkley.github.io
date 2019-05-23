@@ -314,10 +314,11 @@ footer > .copyright {
     background-color: #ff8103;
     padding: 10px;
     font-size: 0.7em;
+    color:black;
 }
 
 footer .copyright a {
-    color: white;
+    color: black;
 }
 
 .color-facebook {
