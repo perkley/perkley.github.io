@@ -7,19 +7,24 @@ header {
 }
 
 .current-weather {
-    display: block;
-    position: relative;
-    top: -10px;
-    right: 20px;
-    background-color: white;
-    border-radius: 5px;
-    text-align: center;
-    padding: 5px;
-    box-shadow: -5px 5px 20px -10px #000;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-.current-weather > img {
+.current-weather div:first-child {
+    position: relative;
+    left: 20px;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+}
+
+.current-weather img {
     width: 100px;
+}
+
+.curr-temp {
+    font-size: 24px;
 }
 
 nav {
@@ -63,6 +68,7 @@ section#forecast {
     display:grid;
     margin-top: 1em;
 }
+
 #forecast-grid-container {
     display: grid;
     grid-template-areas: "fc-title fc-title fc-title fc-title fc-title" 
@@ -70,7 +76,7 @@ section#forecast {
                         "fc-1 fc-2 fc-3 fc-4 fc-5";
     /* grid-gap: 5px; */
     margin: auto;
-    min-width: 350px;
+    /* min-width: 350px; */
     /* border:1px solid pink; */
 }
 
@@ -87,8 +93,10 @@ section#forecast {
 #forecast5 {grid-area: fc-5;}
 
 #forecast-grid-container > div:not(:first-child) {
-    border: 1px solid #03c3ff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     padding: 3px;
+    width: 100px;
 }
 
 .forecast-header {
@@ -96,12 +104,20 @@ section#forecast {
     color: white;
 }
 
+#forecast img {
+    /* width: 100px; */
+    height: 75px;
+    max-width: 90px;
+}
+
 /* ARTICLE */
 
-#article-container img {
+article img {
     float: right;
     width: 50%;
     max-height: 400px;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
 }
 /* article img {
     width: 30%;

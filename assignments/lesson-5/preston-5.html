@@ -6,7 +6,7 @@
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Current weather for preston idaho.">
+        <meta name="description" content="Current weather forecast for preston idaho.">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel="stylesheet" href="css/small-5.css">
@@ -19,8 +19,11 @@
 	<body>
         <header>
             <div class="logo-grid-container">
-                <div class="logo"><img src="images/logo.svg" alt="Weatherit logo"></div>
-                <div class="current-weather">Current Weather<br><img src="images/wi-partial-cloudy.svg" alt="Current Weather: Partial Cloudy"></div>
+                <div class="logo"><img src="images/logo-cloud.svg" alt="Weatherit logo"></div>
+                <div class="current-weather">
+                    <div>TODAY<br><span class="curr-temp">45&deg;</span></div>
+                    <div><img src="images/forecast-partial-cloudy.svg" alt="Current Weather: Partial Cloudy"></div>
+                </div>
                 <!-- <div class="motto-container"> -->
                 <div class="motto"><span class="motto-text"> Let's <strong>weather it</strong> together! &nbsp;</span></div>
                 <!-- </div> -->
@@ -53,14 +56,21 @@
                                 High:<br>
                                 Wind Chill:<br>
                                 Humidity:<br>
-                                Wind Speed:
+                                Wind Speed:<br>
+                                <a href="https://www.pollen.com/forecast/current/pollen/83263" target="_blank" title="Current Allergy Report for Preston, Idaho">Allergy <i class="fas fa-external-link-alt fa-xs"></i></a>:
                             </div>
                             <div class="weather-value">
-                                Sunny<br>
-                                76&deg; F<br>
-                                76&deg; F<br> 
-                                69%<br>
-                                5 mph
+                                Partial Cloudy<br>
+                                49&deg; F<br>
+                                44&deg; F<br> 
+                                66%<br>
+                                15 mph 
+                                    <span class="fa-stack wind-direction" title="Wind Direction from Northeast">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fas fa-location-arrow fa-stack-1x fa-rotate-180 fa-inverse"></i>
+                                    </span>
+                                <br>
+                                5.3
                             </div>
                         </div>
                     </aside>
@@ -71,30 +81,32 @@
                 <div id="forecast-grid-container">
                     <div id="forecast-title">5 Day Forecast</div>
                     <div id="forecast1h" class="forecast-header">Wed</div>
-                    <div id="forecast1">1</div>
+                    <div id="forecast1"><img src="images/forecast-partial-cloudy.svg" alt="Current Weather: Partial Cloudy"><br>45&deg; F</div>
                     <div id="forecast2h" class="forecast-header">Thu</div>
-                    <div id="forecast2">2</div>
+                    <div id="forecast2"><img src="images/forecast-cloudy.svg" alt="Current Weather: Partial Cloudy"><br>52&deg; F</div>
                     <div id="forecast3h" class="forecast-header">Fri</div>
-                    <div id="forecast3">3</div>
+                    <div id="forecast3"><img src="images/forecast-partial-cloudy-rainy.svg" alt="Current Weather: Partial Cloudy"><br>57&deg; F</div>
                     <div id="forecast4h" class="forecast-header">Sat</div>
-                    <div id="forecast4">4</div>
+                    <div id="forecast4"><img src="images/forecast-stormy-lightning.svg" alt="Current Weather: Partial Cloudy"><br>63&deg; F</div>
                     <div id="forecast5h" class="forecast-header">Sun</div>
-                    <div id="forecast5">5</div>
+                    <div id="forecast5"><img src="images/forecast-stormy-rain.svg" alt="Current Weather: Partial Cloudy"><br>66&deg; F</div>
                 </div>
             </section>
 
             <article>
                 <div id="article-container">    
-                    <img src="images/article-hiking.jpg">
-                    <h2>Article Title</h2>
-                    <span class="author">by Author</span>
+                    <img src="images/article-allergy.jpg">
+                    <h2>Is This What's Making You Sneeze?</h2>
+                    <span class="author">by Pollen.com</span>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper 
-                        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie 
-                        consequat, vel illum dolore eu feugiat nulla facilisis at vero.
-                        <a class="button-text" href="">Continue to Full Article</a>
+                            If breathing in fresh spring air makes you sneeze, or sitting on a grassy hill gives you a rash, 
+                            you may have a grass pollen allergy. Grass pollens are microscopic and travel easily through the air.
+                            Everyone breathes in grass pollen, but not everyone reacts to it. 
+                            If you have a grass allergy and go outside on a day when pollen is in the air, 
+                            you're likely to be irritated by symptoms like watery eyes or a runny nose. 
+                            Some people can also have a reaction just by touching grass. 
+                            If you're severely allergic, you could even experience anaphylaxis.
+                        <a class="button-text" href="https://www.pollen.com/allergy/ai-grass-pollens" target="_blank">Continue to Full Article</a>
                     </p>
                     
                 
@@ -107,13 +119,13 @@
             <div class="footer-contact">
                 <div class="contact-info">
                     <div class="grid-space-company"></div>
-                    <div class="grid-company"><h2>Weather It</h2></div>
-                    <div class="grid-icon-addr"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="grid-company"><h3>Weather It</h3></div>
+                    <div class="grid-icon-addr"><i class="fas fa-map-marker-alt fa-fw fa-sm"></i></div>
                     <div class="grid-addr">30 N 1st E<br>Preston, ID 83263</div>
                     
-                    <div class="grid-icon-phone"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="grid-icon-phone"><i class="fas fa-mobile-alt fa-fw fa-sm"></i></div>
                     <div class="grid-phone">999.999.9999</div>
-                    <div class="grid-icon-email"><i class="fas fa-envelope"></i></div>
+                    <div class="grid-icon-email"><i class="fas fa-envelope fa-fw fa-sm"></i></div>
                     <div class="grid-email">contact@weatherit.com</div>
                     <div class="grid-social">
                         <i class="fab fa-facebook-square color-facebook"></i>
@@ -123,11 +135,10 @@
                         <i class="fas fa-share-alt-square color-share"></i>
                     </div>
                 </div>
-                <div id="map">Map</div>
+                <div id="map"></div>
             </div>
             <div class="copyright">
-                &copy; 2019 Weather It | BYU-Idaho CIT 230 Project | Douglas Tietjen<br>
-                Wednesday, May 22, 2019
+                Weather It &copy; 2019 | <a href="">Terms of Use</a> | Douglas Tietjen | <span id="curr-date"></span>
             </div>
         </footer>
 
@@ -136,28 +147,25 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbSDAZEmSl0vCn45u8S3yeQoUqlQSKZbo&callback=initMap"></script>
     
     <script>
+        // Get the current date and display
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        var today  = new Date();
+        document.getElementById("curr-date").innerHTML = today.toLocaleDateString("en-US", options);
+
         function toggleMenu() {
             document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
         }
 
         // Initialize and add the map
         function initMap() {
-  // The location of Uluru
-  var uluru = {lat: 42.0970234, lng: -111.875773};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 8, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
+            // The location of Uluru
+            var uluru = {lat: 42.0970234, lng: -111.875773};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 8, center: uluru});
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: uluru, map: map});
+        }
     </script>
-
-    <!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
-    
-    
 
 </html>
