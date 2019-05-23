@@ -136,7 +136,7 @@
                 <div id="map" title="Google Map Location"></div>
             </div>
             <div class="copyright">
-                Weather It &copy; 2019 | <a href="">Terms of Use</a> | Douglas Tietjen | <span id="curr-date"></span>
+                Weather It &copy; 2019 | <a href="">Terms of Use</a> | Douglas Tietjen | <span id="curr-date">Wednesday, May 22, 2019</span>
             </div>
         </footer>
 
@@ -146,9 +146,9 @@
     
     <script>
         // Get the current date and display
-        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        var today  = new Date();
-        document.getElementById("curr-date").innerHTML = today.toLocaleDateString("en-US", options);
+        //var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        //var today  = new Date();
+        //document.getElementById("curr-date").innerHTML = today.toLocaleDateString("en-US", options);
 
         function toggleMenu() {
             document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
