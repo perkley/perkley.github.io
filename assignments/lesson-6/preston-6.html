@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+	<head>
+		<title>Weather It - Let's weather it together</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Current weather forecast for Preston Idaho.">
+
+        <link href="favicon.ico" rel="icon" type="image/x-icon">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/small-5.css">
+        <link rel="stylesheet" media="screen and (min-width: 670px)" href="css/large-5.css">
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    </head>
+    
+	<body>
+        <header>
+            <div class="logo-grid-container">
+                <div class="logo"><img src="images/logo-cloud.svg" alt="Weatherit logo"></div>
+                <div class="current-weather">
+                    <div>TODAY<br><span class="curr-temp">45&deg;</span></div>
+                    <div><img src="images/forecast-partial-cloudy.svg" alt="Current Weather: Partial Cloudy"></div>
+                </div>
+                <div class="motto"><span class="motto-text"> Let's <strong>weather it</strong> together! &nbsp;</span></div>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#" title="Home">Home</a></li>
+                <li class="active"><a href="#" title="Home">Preston</a></li>
+                <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+                <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+                <li><a href="#" title="Storm Center">Storm Center</a></li>
+                <li><a href="#" title="Gallery">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h1>Preston, Idaho</h1>
+                
+                <div id="weather-summary">
+                    <picture>
+                        <source media="(max-width: 366px)" srcset="images/cit230_image_franklin-small.jpg">
+                        <source media="(max-width: 670px)" srcset="images/cit230_image_franklin-medium.jpg">
+                        <img class="img__hero" src="images/cit230_image_franklin-large.jpg" alt="Image of countryside on a cloudy morning">
+                    </picture>
+                    <aside>
+                        <div class="weather-summary-grid">
+                            <div class="weather-summary-title">Weather Summary</div>
+                            <div class="weather-label">
+                                Currently:<br>
+                                High:<br>
+                                Wind Chill:<br>
+                                Humidity:<br>
+                                Wind Speed:<br>
+                                <a href="https://www.pollen.com/forecast/current/pollen/83263" target="_blank" rel="noreferrer" title="Current Allergy Report for Preston, Idaho">Allergy <i class="fas fa-external-link-alt fa-xs"></i></a>:
+                            </div>
+                            <div class="weather-value">
+                                Partial Cloudy<br>
+                                49&deg; F<br>
+                                44&deg; F<br> 
+                                66%<br>
+                                15 mph 
+                                    <span class="fa-stack wind-direction" title="Wind Direction from Northeast">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fas fa-location-arrow fa-stack-1x fa-rotate-180 fa-inverse"></i>
+                                    </span>
+                                <br>
+                                5.3
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="forecast">
+                <div id="forecast-grid-container">
+                    <div id="forecast-title"><h3>5 Day Forecast</h3></div>
+                    <div id="forecast1h" class="forecast-header">Wed</div>
+                    <div id="forecast1"><img src="images/forecast-partial-cloudy.svg" alt="Partial Cloudy"><br>45&deg; F</div>
+                    <div id="forecast2h" class="forecast-header">Thu</div>
+                    <div id="forecast2"><img src="images/forecast-cloudy.svg" alt="Cloudy"><br>52&deg; F</div>
+                    <div id="forecast3h" class="forecast-header">Fri</div>
+                    <div id="forecast3"><img src="images/forecast-partial-cloudy-rainy.svg" alt="Cloudy and Rainy"><br>57&deg; F</div>
+                    <div id="forecast4h" class="forecast-header">Sat</div>
+                    <div id="forecast4"><img src="images/forecast-stormy-lightning.svg" alt="Thunderstorm"><br>63&deg; F</div>
+                    <div id="forecast5h" class="forecast-header">Sun</div>
+                    <div id="forecast5"><img src="images/forecast-stormy-rain.svg" alt="Rain Storm"><br>66&deg; F</div>
+                </div>
+            </section>
+
+            <article>
+                <div id="article-container">    
+                    <picture>
+                        <source media="(max-width: 366px)" srcset="images/article-allergy-small.jpg">
+                        <img class="img__hero" src="images/article-allergy-large.jpg" alt="Image of butterfly on grass">
+                    </picture>
+                    
+                    <h2>Is This What's Making You Sneeze?</h2>
+                    <span class="author">by Pollen.com</span>
+                    <p>
+                            If breathing in fresh spring air makes you sneeze, or sitting on a grassy hill gives you a rash, 
+                            you may have a grass pollen allergy. Grass pollens are microscopic and travel easily through the air.
+                            Everyone breathes in grass pollen, but not everyone reacts to it. 
+                            If you have a grass allergy and go outside on a day when pollen is in the air, 
+                            you're likely to be irritated by symptoms like watery eyes or a runny nose. 
+                            Some people can also have a reaction just by touching grass. 
+                            If you're severely allergic, you could even experience anaphylaxis.
+                        <a class="button-text" href="https://www.pollen.com/allergy/ai-grass-pollens" target="_blank" rel="noreferrer">Continue to Full Article</a>
+                    </p>                
+                </div>
+            </article>
+
+        </main>
+
+        <footer>
+            <div class="footer-contact">
+                <div class="contact-info">
+                    <div class="grid-space-company"></div>
+                    <div class="grid-company"><h3>Weather It</h3></div>
+                    <div class="grid-icon-addr"><i class="fas fa-map-marker-alt fa-fw fa-sm"></i></div>
+                    <div class="grid-addr">30 N 1st E<br>Preston, ID 83263</div>
+                    
+                    <div class="grid-icon-phone"><i class="fas fa-mobile-alt fa-fw fa-sm"></i></div>
+                    <div class="grid-phone">999.999.9999</div>
+                    <div class="grid-icon-email"><i class="fas fa-envelope fa-fw fa-sm"></i></div>
+                    <div class="grid-email">contact@weatherit.com</div>
+                    <div class="grid-social">
+                        <i class="fab fa-facebook-square color-facebook"></i>
+                        <i class="fab fa-twitter-square color-twitter"></i>
+                        <i class="fab fa-instagram color-instagram"></i>
+                        <i class="fab fa-pinterest-square color-pinterest"></i>
+                        <i class="fas fa-share-alt-square color-share"></i>
+                    </div>
+                </div>
+                <div id="map" title="Google Map Location"></div>
+            </div>
+            <div class="copyright">
+                Weather It &copy; 2019 | <a href="">Terms of Use</a> | Douglas Tietjen | <span id="curr-date">Wednesday, May 22, 2019</span>
+            </div>
+        </footer>
+
+        <script src="js/currentdate.js"></script>
+        <script src="js/hamburger.js"></script>
+        
+        <script src="js/googlemap.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbSDAZEmSl0vCn45u8S3yeQoUqlQSKZbo&callback=initMap"></script>
+    </body>
+
+</html>
