@@ -2,6 +2,7 @@
 
 html { 
     margin: 0 auto;
+    min-width: 250px;
 }
 
 body {
@@ -144,7 +145,6 @@ h1 {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    
 }
 
 #weather-summary {
@@ -198,7 +198,16 @@ h1 {
 }
 
 .wind-direction {
-    font-size: 0.6rem;
+    position: relative;
+}
+.wind-direction img {
+    position: absolute;
+    top: 4px;
+}
+.wind-direction img:last-child {
+    width: 0.6rem;
+    left: 3px;
+    transform: rotate(180deg);
 }
 
 section#forecast {
@@ -244,7 +253,8 @@ article img {
 .button-text {
     display: block;
     background-color: #ff8103;
-    width: max-content;
+    width: 80%;
+    text-align: center;
     padding: 10px;
     margin: 20px auto;
     text-decoration: none;
@@ -281,7 +291,6 @@ footer {
                         "social social";
     grid-gap: 5px;
     margin: auto;
-    min-width: 350px;
 }
 
 .grid-space-company {grid-area: spcompany;}
@@ -321,20 +330,13 @@ footer .copyright a {
     color: black;
 }
 
-.color-facebook {
-    color: #325094;
+.icon {
+    height: 1rem;
 }
-.color-twitter {
-    color: #3ec6ef;
-}
-.color-instagram {
-    color: #35709c;
-}
-.color-share {
-    color: #2bab51;
-}
-.color-pinterest {
-    color: #ce0a30;
+
+.social {
+    height: 2rem;
+    margin-top: .5rem;
 }
 
 /* clearfix: Force an element not to collapse  */

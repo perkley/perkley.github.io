@@ -58,6 +58,9 @@ li.active {
     font-size: 20px;
 }
 
+.button-text {
+    width:50%;
+}
 
 main, footer {
     max-width: 900px;
@@ -124,11 +127,8 @@ article picture {
 }
 
 article img {
-    /* float: right; */
     width: 50%;
     max-height: 400px;
-    /* margin-left: 0.5em;
-    margin-bottom: 0.5em; */
 }
 
 .footer-contact {
