@@ -39,7 +39,9 @@ tr:nth-child(odd) {
     background-color: #e7f0ed;
 }
 
-table tbody tr:nth-child(4) td:nth-child(3) {
+/* This colors it: table tbody tr:nth-child(4) td:nth-child(3) {
+    but a class is much easier to make sure we get the correct one */
+table .highlight {
     background-color: #628ca6;
     color: white;
 }
@@ -49,6 +51,7 @@ tfoot td {
     background-color: #7fb9c2;
 }
 
-.emphasis {
+table th[scope=row] {
     font-style: italic;
+    font-weight: normal;
 }
