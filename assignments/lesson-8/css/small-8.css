@@ -1,0 +1,473 @@
+/* ALL */
+
+html { 
+    margin: 0 auto;
+    min-width: 250px;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 1.2rem;
+}
+
+
+
+/* HEADER */
+
+header {
+    background-image: url(../images/header-clouds-s.svg);
+    background-color:#0088b2;
+    background-size:100vw;
+    background-repeat:no-repeat;
+    width:100%;
+    background-position: top center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.logo {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.current-weather {
+    flex: 1;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 10px;
+}
+
+.motto {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: calc(16px + 1vw);
+    font-style: italic;
+    color: white;
+    padding: 5px;
+}
+
+.motto-text {
+    background-color: rgba(0,136,178, 0.70);
+    border-radius: 10px;
+}
+
+.logo img {
+    width: 35vw;
+    padding: 10px;
+}
+
+.current-weather {
+    display: none;
+}
+
+@media only screen and (min-width: 366px) {
+    header {
+        background-position: center center;
+    }
+ }
+ @media only screen and (max-width: 365px) {
+    header {
+        background-position: center center;
+        background-size: cover;
+    }
+ }
+
+
+
+/* NAVIGATION */
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation { 
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.navigation li:first-child { 
+    display: block;
+    background-color: #ff8103;
+}
+
+.navigation li {
+    
+    display: none;
+    background-color: #0088b2;
+    border-bottom: 1px solid white;
+}
+
+.navigation a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.6rem; 
+}
+
+.navigation a:hover {
+    background-color: #ff8103;
+}
+
+li.active {
+    background-color: #03c3ff;
+}
+
+/* the onclick JS toggles the .responsive class from display none (.navigation li) to 
+    display block because the repsonsive class is added to the end of the class list like this:
+    <ul class="navigation responsive">
+*/
+.responsive li { 
+    display: block;
+}
+
+
+
+/* CONTENT */
+
+main {
+    padding: 0px 10px 0px 10px;
+    margin: auto;
+    max-width: 950px;
+}
+
+main section {
+    text-align: center;
+}
+
+h1 {
+    font-size: calc(24px + 1vw);
+    margin: 0px;
+    color: #0088b2;
+    text-align: center;
+    padding: 5px;
+}
+
+.img__hero {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#weather-summary {
+    position: relative;
+}
+#weather-summary a {
+    color: #0088b2;
+    text-decoration: none;
+}
+
+#weather-summary aside {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255,255,255,0.85);
+    padding:10px;
+    border:4px solid #0088b2;
+    border-radius: 10px;
+}
+
+.weather-summary-grid {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    grid-gap: 5px;
+}
+
+.weather-summary-title {
+    grid-column: 1 / 4;
+    color: #0088b2;
+    font-size: calc(16px + 1vw);
+    font-weight: 700;
+    border-bottom: 1px solid #0088b2;
+}
+
+.weather-label, .weather-value {
+    font-size: calc(12px + 1vw);
+    line-height: calc(1.1em + 0.5vw);
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.weather-label {
+    text-align: right;
+    color: #0088b2;
+}
+
+.weather-value {
+    text-align: left;
+    color: #b25a01;
+}
+
+.wind-direction {
+    position: relative;
+}
+.wind-direction img {
+    position: absolute;
+    top: 4px;
+}
+.wind-direction img:last-child {
+    width: 0.6rem;
+    left: 3px;
+    transform: rotate(180deg);
+}
+
+section#forecast {
+    display:none;
+}
+
+article {
+    background-color: #0088b2;
+    padding: 1em;
+    margin-top: 1.5rem;
+    border: 4px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+}
+
+h2 {
+    color: white;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.author {
+    display: block;
+    color: rgba(255,255,255,0.5);
+}
+
+article p {
+    color: white;
+}
+
+article img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: top left;
+    border: 4px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+}
+
+.button-text {
+    display: block;
+    background-color: #ff8103;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+    text-decoration: none;
+    color: black;
+    border: 4px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+}
+
+section.message {
+    margin: 3rem;
+}
+
+section.message h1 {
+    padding: 0 0 1rem 0;
+}
+
+section.message div {
+    background-color: #0088b2;
+    font-size: 1.5rem;
+    border: 4px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+    color: white;   
+}
+
+section.message hr {
+    height: 3px;
+    border: none;
+    color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.5);
+    width: 75%;
+}
+
+
+/* FORM */
+
+section div.stormForm {
+    text-align: left;
+}
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #0088b2;
+    border-radius: 10px;
+    padding: 0 .5rem 2rem .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #0088b2;
+}
+
+form label.top input, form label.top select, form label.top textarea {
+    display: block;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    padding: .75rem;
+    color: #0088b2;
+    width: 100%;
+    background-color: rgba(0,0,0,0.05);
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+form label.sbs {
+    padding: 0 1rem 0 0;
+    color: #0088b2;
+}
+
+form label.top input:required {
+    border-left: #ff8e1d solid 10px;
+}
+
+form label.top input:required:valid {
+    border-left: #03c3ff solid 10px;
+}
+
+span#stormSeverityValue {
+    display:inline-block;
+    text-align: center;
+    font-weight: bold;
+    width: 2rem;
+    top: 3rem;
+    border: 1px solid #0088b2;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    margin: auto;
+    margin-top: 1.5rem;
+    text-align: center;
+    background-color: #0088b2;
+    color: white;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.contact-info {
+    display:grid;
+    grid-template-areas: "spcompany company" 
+                        "iaddr address"
+                        "iaddr address"
+                        "iphone phone"
+                        "iemail email"
+                        "social social";
+    grid-gap: 5px;
+    margin: auto;
+}
+
+.grid-space-company {grid-area: spcompany;}
+.grid-company {grid-area: company; text-align: left;}
+.grid-icon-addr {grid-area: iaddr; text-align: right; position: relative; bottom: -6px;}
+.grid-addr {grid-area: address; text-align: left;}
+.grid-icon-phone {grid-area: iphone; text-align: right; position: relative; bottom: -3px;}
+.grid-phone {grid-area: phone; text-align: left;}
+.grid-icon-email {grid-area: iemail; text-align: right; position: relative; bottom: -3px;}
+.grid-email {grid-area: email; text-align: left;}
+.grid-social {
+    grid-area: social;
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0px;
+    letter-spacing: 5px;
+    background-color:white;
+    border-radius: 10px;
+}
+
+
+#map {
+    width: 100%; 
+}
+
+#map img {
+    object-fit: cover;
+    width: 98%;
+    height: 200px;
+    border: 4px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+}
+
+footer > .copyright {
+    background-color: #ff8103;
+    padding: 10px;
+    font-size: 0.7em;
+    color:black;
+}
+
+footer .copyright a {
+    color: black;
+}
+
+.icon {
+    height: 1rem;
+}
+
+.social {
+    height: 2rem;
+    margin-top: .5rem;
+}
+
+/* clearfix: Force an element not to collapse  */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*  GALLERY STYLES */
+
+.gallery-container {
+    display: grid;
+    grid-gap: 20px; 
+    align-items: stretch; 
+}
+
+.gallery-container div {
+    border: 1px solid #ccc;
+    background-color: #0088b2;
+    max-width: 100%;
+    border: 4px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+}
+
+.gallery-pic-text {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: white;
+    padding: 0px 2px 2px 2px;   
+}
+
+.gallery-container img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
