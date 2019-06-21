@@ -1,4 +1,4 @@
-var section = document.querySelector('section.towndata-container');
+var townDataContainer = document.querySelector('div.towndata-container');
 
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
@@ -112,5 +112,5 @@ function createDataArticle(towns, townName, i) {
 
     townArticle.appendChild(townFlexSection);
 
-    section.appendChild(townArticle);
+    townDataContainer.appendChild(townArticle);
 }
