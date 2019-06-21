@@ -157,6 +157,10 @@ h1 {
     border-radius: 10px;
 }
 
+.imghero-bottom {
+    object-position: center bottom;
+}
+
 #weather-summary {
     position: relative;
 }
@@ -365,9 +369,9 @@ span#stormSeverityValue {
     justify-content: flex-end;
 }
 
-.towndata-container article {
+/* .towndata-container article {
     margin-top: 0;
-}
+} */
 
 .towndata-flex {
     display: flex;
@@ -508,6 +512,10 @@ footer .copyright a {
     content: "";
     display: table;
     clear: both;
+}
+
+.no-margin {
+    margin: 0;
 }
 
 
