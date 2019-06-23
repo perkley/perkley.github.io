@@ -37,7 +37,7 @@ function populateEvents(towns, i) {
     let events = dataFound ? towns[i].events : '';
 
     for (x=0; x < (dataFound ? events.length: 1); x++) {
-        console.log(events[x]);
+        // console.log(events[x]);
 
         let eventLine = dataFound ? events[x].split(":") : "Technical Difficulty";
 

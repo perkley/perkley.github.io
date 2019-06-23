@@ -65,8 +65,7 @@ forecastRequest.onload = function () {
             splitDate = sDate[0].split("-");
  
             //Create the date from string
-            fDate = new Date(splitDate[0], splitDate[1]-1, splitDate[2]);
-            
+            fDate = new Date(splitDate[0], splitDate[1]-1, splitDate[2]-1);
             let fTemp = list[x].main.temp.toFixed(0);
             let fIcon = "http://openweathermap.org/img/w/" + list[x].weather[0].icon + ".png";
             let fAlt = list[x].weather[0].description;
