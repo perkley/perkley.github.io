@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+	<head>
+		<title>Weather It - Storm Center</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Current weather forecast for Preston Idaho.">
+
+        <link href="favicon.ico" rel="icon" type="image/x-icon">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" media="screen and (min-width: 750px)" href="css/medium.css">
+        <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/large.css">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    </head>
+    
+	<body>
+
+        <header>
+            <div class="logo-container">
+                <div class="logo"><img src="images/logo-cloud-s.svg" alt="Weatherit logo"></div>
+                <div class="current-weather">
+                    <div>TODAY<br><span class="curr-temp">45&deg;</span></div>
+                    <div><img src="images/forecast-partial-cloudy.svg" alt="Current Weather: Partial Cloudy"></div>
+                </div>
+                <div class="motto"><span class="motto-text"> Let's <strong>weather it</strong> together! &nbsp;</span></div>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="preston.html" title="Home">Preston</a></li>
+                <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+                <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+                <li class="active"><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+                <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main class="sectionStormCenter">
+            <section>
+                <div class="stormForm">
+                    <h1>Storm Center</h1>
+                    <br>
+                    <h3>Report a Storm or Unusual Weather</h3>
+                    
+                    <form method="get" action="thanks.html">
+                        
+                        <fieldset>
+                            <legend>Your Information</legend>
+                        
+                            <label for="name" class="top">Full Name: <input type="text" id="name" name="name" required pattern="[a-zA-Z\s]{5,}"></label>
+                            <label for="email" class="top">Email: <input type="email" id="email" name="email" placeholder="email@yahoo.com"></label>
+                            <label for="phone" class="top">Phone Number: <input type="tel" id="phone" name="phone" required></label>
+                            <label for="zip" class="top">Zip Code: <input type="number" id="zip" name="zip" required></label>
+                        </fieldset>
+
+                        <fieldset>
+                                <legend>Storm Report</legend>
+                            <label for="date" class="top">Storm Date: <input type="date" id="date" name="date" placeholder="mm/dd/yyyy"></label>
+
+                            <label for="sType" class="top">Storm Type: 
+                                <input list="stormtype" id="sType" name="stormtype">
+
+                                <datalist id="stormtype">
+                                    <option value="Flash Flood">
+                                    <option value="Hail">
+                                    <option value="Hurricane">
+                                    <option value="Thunderstorm">
+                                    <option value="Tornado">
+                                </datalist>
+                            </label>
+
+                            <label for="stormSeverity" class="top">Storm Severity (1 to 10): <span id="stormSeverityValue">5</span>
+                                <input type="range" id="stormSeverity" value="5" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"> 
+                            </label>
+                        
+                            <label for="stormRegion" class="top">Storm Region: 
+                                <select id="stormRegion" name="stormRegion">
+                                    <option selected disabled>Select Region...</option>
+                                    <option value="preston">Preston</option>
+                                    <option value="sugarcity">Sugar City</option>
+                                    <option value="fishhaven">Fish Haven</option>
+                                </select>
+                            </label>
+
+                        
+                            <div>User In-Danger Level:</div>
+                            <label for="dlYes" class="sbs"><input type="radio" id="dlYes" name="dangerlevel" value="yes"> Yes</label> 
+                            <label for="dlMaybe" class="sbs"><input type="radio" id="dlMaybe" name="dangerlevel" value="maybe"> Maybe</label> 
+                            <label for="dlNo" class="sbs"><input type="radio" id="dlNo" name="dangerlevel" value="no"> No</label> 
+                        </fieldset>
+                        
+                        <label for="comments" class="top">Additional Information or Comments <textarea id="comments" name="comments"></textarea></label>
+
+                        <input type="submit" value="Report Storm" class="button-text">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-contact">
+                <div class="contact-info">
+                    <div class="grid-space-company"></div>
+                    <div class="grid-company"><h3>Weather It</h3></div>
+                    <div class="grid-icon-addr">
+                            <img src="images/icons/map-marker-alt.svg" class="icon" alt="Map Marker Icon">
+                    </div>
+                    <div class="grid-addr">30 N 1st E<br>Preston, ID 83263</div>
+                    
+                    <div class="grid-icon-phone"><img src="images/icons/mobile-alt.svg" class="icon" alt="Map Marker Icon"></div>
+                    <div class="grid-phone">999.999.9999</div>
+                    <div class="grid-icon-email"><img src="images/icons/envelope.svg" class="icon" alt="Mail Icon"></div>
+                    <div class="grid-email">contact@weatherit.com</div>
+                    <div class="grid-social">
+                            <img src="images/icons/facebook-square.svg" class="icon social" alt="Facebook Icon">
+                            <img src="images/icons/twitter-square.svg" class="icon social" alt="Twitter Icon">
+                            <img src="images/icons/instagram.svg" class="icon social" alt="Instagram Icon">
+                            <img src="images/icons/pinterest-square.svg" class="icon social" alt="Pinterest Icon">
+                            <img src="images/icons/share-alt-square.svg" class="icon social" alt="Share Icon">
+                    </div>
+                </div>
+                <div id="map"><img src="images/map.png" alt="Business Map Location"></div>
+            </div>
+            <div class="copyright">
+                Weather It &copy; 2019 | <a href="#">Terms of Use</a> | Douglas Tietjen | <span id="curr-date"></span>
+            </div>
+        </footer>
+
+        <script src="js/currentdate.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/stormcenter.js"></script>
+    </body>
+
+</html>
