@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+	<head>
+		<title>Weather It - Gallery</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Current weather forecast for Preston Idaho.">
+
+        <link href="favicon.ico" rel="icon" type="image/x-icon">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" media="screen and (min-width: 750px)" href="css/medium.css">
+        <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/large.css">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    </head>
+    
+	<body>
+
+        <header>
+            <div class="logo-container">
+                <div class="logo"><img src="images/logo-cloud-s.svg" alt="Weatherit logo"></div>
+                <div class="motto"><span class="motto-text"> Let's <strong>weather it</strong> together! &nbsp;</span></div>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="preston.html" title="Home">Preston</a></li>
+                <li><a href="sodasprings.html" title="Soda Springs">Soda Springs</a></li>
+                <li><a href="fishhaven.html" title="Fish Haven">Fish Haven</a></li>
+                <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+                <li class="active"><a href="gallery.html" title="Gallery">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h1 class="gallery-title">Weather Gallery</h1>
+                <div class="gallery-container">
+                    <div><img src="images/gallery/gallery-rainbow.jpg" alt="Picture of rainbow in countryside."><br><span class="gallery-pic-text">Beautiful scenery in Soda Springs</span></div>
+                    <div><img src="images/gallery/gallery-snowmountains.jpg" alt="Picture of snowy mountains."><br><span class="gallery-pic-text">Skiing season has started</span></div>
+                    <div><img src="images/gallery/gallery-rockpile.jpg" alt="Picture of rock pile on hiking trail."><br><span class="gallery-pic-text">Don't get lost when hiking</span></div>                   
+                    <div><img src="images/gallery/gallery-snowyroads.jpg" alt="Picture of road covered with snow."><br><span class="gallery-pic-text">Snow causes treacherous roads</span></div>
+                    <div><img src="images/gallery/gallery-pollen.jpg" alt="Picture of yellow flower field."><br><span class="gallery-pic-text">Pollen season in full force</span></div>
+                    <div><img src="images/gallery/gallery-snowload.jpg" alt="Picture of house and tree covered by snow."><br><span class="gallery-pic-text">Trees bowing to the weight</span></div>
+                </div>  
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-contact">
+                <div class="contact-info">
+                    <div class="grid-space-company"></div>
+                    <div class="grid-company"><h3>Weather It</h3></div>
+                    <div class="grid-icon-addr">
+                            <img src="images/icons/map-marker-alt.svg" class="icon" alt="Map Marker Icon">
+                    </div>
+                    <div class="grid-addr">30 N 1st E<br>Preston, ID 83263</div>
+                    
+                    <div class="grid-icon-phone"><img src="images/icons/mobile-alt.svg" class="icon" alt="Map Marker Icon"></div>
+                    <div class="grid-phone">999.999.9999</div>
+                    <div class="grid-icon-email"><img src="images/icons/envelope.svg" class="icon" alt="Mail Icon"></div>
+                    <div class="grid-email">contact@weatherit.com</div>
+                    <div class="grid-social">
+                            <img src="images/icons/facebook-square.svg" class="icon social" alt="Facebook Icon">
+                            <img src="images/icons/twitter-square.svg" class="icon social" alt="Twitter Icon">
+                            <img src="images/icons/instagram.svg" class="icon social" alt="Instagram Icon">
+                            <img src="images/icons/pinterest-square.svg" class="icon social" alt="Pinterest Icon">
+                            <img src="images/icons/share-alt-square.svg" class="icon social" alt="Share Icon">
+                    </div>
+                </div>
+                <div id="map"><img src="images/map.png" alt="Business Map Location"></div>
+            </div>
+            <div class="copyright">
+                Weather It &copy; 2019 | <a href="#">Terms of Use</a> | Douglas Tietjen | <span id="curr-date"></span>
+            </div>
+        </footer>
+
+        <script src="js/currentdate.js"></script>
+        <script src="js/hamburger.js"></script>
+    </body>
+
+</html>

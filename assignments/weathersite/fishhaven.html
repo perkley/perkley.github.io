@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+	<head>
+		<title>Weather It - Fish Haven Idaho</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Current weather forecast for Fish Haven Idaho.">
+
+        <link href="favicon.ico" rel="icon" type="image/x-icon">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" media="screen and (min-width: 750px)" href="css/medium.css">
+        <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/large.css">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    </head>
+    
+	<body>
+
+        <header>
+            <div class="logo-container">
+                <div class="logo"><img src="images/logo-cloud-s.svg" alt="Weatherit logo"></div>
+                <div class="current-weather">
+                    <div>TODAY<br><span id="todayTemp" class="curr-temp"></span>&deg; F</div>
+                    <div><img id="todayImg" src="#" alt="Loading"></div>
+                </div>
+                <div class="motto"><span class="motto-text"> Let's <strong>weather it</strong> together! &nbsp;</span></div>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="preston.html" title="Home">Preston</a></li>
+                <li><a href="sodasprings.html" title="Soda Springs">Soda Springs</a></li>
+                <li class="active"><a href="fishhaven.html" title="Fish Haven">Fish Haven</a></li>
+                <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+                <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h1>Fish Haven, Idaho</h1>
+                
+                <div id="weather-summary">
+                    <picture>
+                        <source media="(max-width: 366px)" srcset="images/fishhaven-hero-small.jpg">
+                        <source media="(max-width: 670px)" srcset="images/fishhaven-hero-medium.jpg">
+                            <img class="img__hero" src="images/fishhaven-hero-large.jpg" alt="Image of fisherman on the lake at sundown">
+                    </picture>
+                    <aside>
+                        <div class="weather-summary-grid">
+                            <div class="weather-summary-title">Weather Summary</div>
+                            <div class="weather-label">
+                                Currently:<br>
+                                High:<br>
+                                Wind Chill:<br>
+                                Humidity:<br>
+                                Wind Speed:
+                            </div>
+                            <div class="weather-value">
+                                <span id="currentdesc" class="capitalizeText"></span><br>
+                                <span id="currenttemp"></span>&deg; F<br>
+                                <span id="windchill"></span>&deg; F<br> 
+                                <span id="currenthumidity"></span>%<br>
+                                <span id="windspeed"></span> mph
+                                <span class="wind-direction">
+                                    <img src="images/icons/square.svg" class="icon" alt="Wind Direction Background Box">
+                                    <img id="windDegree" src="images/icons/location-arrow.svg" class="icon" alt="Wind Direction Icon">
+                                </span> &nbsp;
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="forecast">
+                <div id="forecast-grid-container">
+                    <div id="forecast-title"><h3>5 Day Forecast</h3></div>
+                    <div id="forecast1h" class="forecast-header"></div>
+                    <div id="forecast1"><img id="imgForecast1" src="#" alt="Loading"><br><span id="forecastTemp1"></span>&deg; F</div>
+                    <div id="forecast2h" class="forecast-header"></div>
+                    <div id="forecast2"><img id="imgForecast2" src="#" alt="Loading"><br><span id="forecastTemp2"></span>&deg; F</div>
+                    <div id="forecast3h" class="forecast-header"></div>
+                    <div id="forecast3"><img id="imgForecast3" src="#" alt="Loading"><br><span id="forecastTemp3"></span>&deg; F</div>
+                    <div id="forecast4h" class="forecast-header"></div>
+                    <div id="forecast4"><img id="imgForecast4" src="#" alt="Loading"><br><span id="forecastTemp4"></span>&deg; F</div>
+                    <div id="forecast5h" class="forecast-header"></div>
+                    <div id="forecast5"><img id="imgForecast5" src="#" alt="Loading"><br><span id="forecastTemp5"></span>&deg; F</div>
+                </div>
+            </section>
+
+            <article>
+                <div id="article-container">    
+                    <picture>
+                        <source media="(max-width: 366px)" srcset="images/article-icefishing-small.jpg">
+                        <img class="img__hero" src="images/article-icefishing-large.jpg" alt="Image of four caught fish on the snow">
+                    </picture>
+                    
+                    <h2>Ten reasons to go ice fishing this winter, and where it happens in eastern Idaho</h2>
+                    <span class="author">by EastIdahoNews.com</span>
+                    <p>
+                        <strong>Bear Lake:</strong>    
+                        Cutthroat, lake trout, rainbow trout, and a unique Idaho fish called cisco can
+                             be pulled from this large water body that spans Idaho and Utah. 
+                             Don’t worry, you just need one fishing license from either state to fish this lake. 
+                             Just remember, only one line is permitted unless an angler possesses a two-pole permit. 
+                             As with other large water bodies, the ice conditions can get “tricky” quickly from spot to spot, 
+                             so be extra mindful of ice conditions as you fish across this water body. 
+                             Dipnetting for cisco is permitted Jan. 1 through Feb.15. Dipnets cannot be 
+                             larger than 18 inches in any dimension; however, any size hole may be cut 
+                             through the ice to catch cisco. Check out Fish and Game’s Fish Planner for a map, 
+                             fishing rules and more information about Bear Lake.
+                        <a class="button-text" href="https://www.eastidahonews.com/2018/12/ten-reasons-to-go-ice-fishing-this-winter-and-where-it-happens-in-eastern-idaho/" target="_blank" rel="noreferrer">Continue to Full Article</a>
+                    </p>                
+                </div>
+            </article>
+
+            <article>
+                <h2>Upcoming Events for Fish Haven</h2>
+                <div id="events-container">
+
+                </div>
+            </article>
+
+        </main>
+
+        <footer>
+            <div class="footer-contact">
+                <div class="contact-info">
+                    <div class="grid-space-company"></div>
+                    <div class="grid-company"><h3>Weather It</h3></div>
+                    <div class="grid-icon-addr">
+                            <img src="images/icons/map-marker-alt.svg" class="icon" alt="Map Marker Icon">
+                    </div>
+                    <div class="grid-addr">30 N 1st E<br>Preston, ID 83263</div>
+                    
+                    <div class="grid-icon-phone"><img src="images/icons/mobile-alt.svg" class="icon" alt="Map Marker Icon"></div>
+                    <div class="grid-phone">999.999.9999</div>
+                    <div class="grid-icon-email"><img src="images/icons/envelope.svg" class="icon" alt="Mail Icon"></div>
+                    <div class="grid-email">contact@weatherit.com</div>
+                    <div class="grid-social">
+                            <img src="images/icons/facebook-square.svg" class="icon social" alt="Facebook Icon">
+                            <img src="images/icons/twitter-square.svg" class="icon social" alt="Twitter Icon">
+                            <img src="images/icons/instagram.svg" class="icon social" alt="Instagram Icon">
+                            <img src="images/icons/pinterest-square.svg" class="icon social" alt="Pinterest Icon">
+                            <img src="images/icons/share-alt-square.svg" class="icon social" alt="Share Icon">
+                    </div>
+                </div>
+                <div id="map"><img src="images/map.png" alt="Business Map Location"></div>
+            </div>
+            <div class="copyright">
+                Weather It &copy; 2019 | <a href="#">Terms of Use</a> | Douglas Tietjen | <span id="curr-date"></span>
+                <br><br>
+                Weather by <a rel="cc:attributionURL" href="OpenWeatherMap.org">OpenWeatherMap.org</a>, licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 Generic License</a>
+            </div>
+        </footer>
+
+        <script src="js/currentdate.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script id="openweathermapapi" data-town-id="5585010" src="js/openweathermapapi.js"></script>
+        <script id="townevents" data-town="fish haven" src="js/townevents.js"></script>
+    </body>
+
+</html>
