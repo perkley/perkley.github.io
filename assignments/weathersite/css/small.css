@@ -297,7 +297,6 @@ section.message hr {
     height: 3px;
     border: none;
     color: rgba(255,255,255,0.5);
-    background-color: rgba(255,255,255,0.5);
     width: 75%;
 }
 
@@ -328,8 +327,6 @@ form label.top input, form label.top select, form label.top textarea {
     color: #0088b2;
     width: 100%;
     background-color: rgba(0,0,0,0.05);
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
     box-sizing:border-box;
 }
 
