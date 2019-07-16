@@ -1,0 +1,90 @@
+header {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    height: unset;
+    width: unset !important;
+    position: static;
+    display: static;
+    background-color: unset;
+    transition: 0s;
+    padding-top: 0px;
+}
+
+.navigation > li:first-child { 
+    display: none;
+}
+
+.navigation li {
+    margin: 10px;
+    text-align: center;
+}
+
+  .navigation li a {
+    padding: 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #6a6b1e;
+    display: static;
+    transition: none;
+    width: 100%;
+  }
+
+.navigation li a:hover {
+    color: black;
+}
+
+.menuBtn, .closeBtn {
+    display: none !important;
+    position: static;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #3c749e;
+    text-align: left;
+    padding: 0px;
+}
+
+.dropdown a {
+    display: block;
+    text-align: left;
+    padding: 4px !important;
+}
+.dropdown a:hover {
+    background-color: #6a6b1e;
+}
+
+.submenu:hover .dropdown {
+    display: block;
+}
+
+.title-container {
+    grid-template-columns: 2fr 1fr;
+}
+
+.motto {
+    display: block;
+}
+
+.active {
+    background-color: unset;
+}
+.active a {
+    color: black !important;
+}
+
+.navigation img {
+    display: inline;
+}
+

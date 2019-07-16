@@ -1,0 +1,176 @@
+/* * */
+html { 
+    margin: 0 auto;
+}
+
+/* Main */
+
+body {
+    font-family: 'Mukta Mahee', sans-serif;
+    background-image: url(../images/granite-bg.svg);
+    background-size: 100px;
+}
+
+.logo img {
+    padding: 10px;
+    width: calc(100% - 20px);
+    min-width: 100px;
+    max-width: 225px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-content: stretch;
+    align-items: center;
+}
+
+
+.logo {
+    order: 0;
+    flex: 0 1 40%;
+    align-self: auto;
+    }
+.logo a {
+    display: inline;
+}
+.logo-nav {
+    order: 0;
+    flex: 1 1 auto;
+    align-self: auto;
+    }
+
+
+
+
+/* NAVIGATION */
+
+nav .menuBtn a {
+    padding: 20px 10px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    display: block;
+    height: 100%;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    width: 100%;
+    background-color: #6a6b1e;
+}
+
+
+
+/* @media only screen and (max-width: 250px) {
+    nav .menuBtn a {margin: 0px;}
+} */
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+    list-style: none;
+}
+
+.navigation {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #173851;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .navigation li a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #c6c8c3;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .navigation li a:hover {
+    color: #f1f1f1;
+  }
+  
+  .navigation .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 2.5rem;
+    margin-left: 50px;
+  }
+
+  .menuBtn, .closeBtn {
+    display: block;
+}
+
+.navigation img {
+    display: none;
+}
+
+
+
+.active {
+    border-bottom: 5px solid #ab5452;
+    padding-bottom: 5px;
+    background-color:#3c749e;
+}
+
+.active a, .dropdown .active a {
+    color: white !important;
+}
+
+.dropdown .active {
+    background-color:#ab5452;
+    border-bottom: unset;
+    padding-bottom: unset;
+}
+
+.dropdown {
+    display: static;
+    padding-left: 30px;
+}
+
+
+
+.dropdown a {
+    color: #e9ea4d !important;
+    font-size: 1rem !important;
+}
+
+.dropdown a:hover {
+    color: white !important;
+}
+  
+
+
+
+/* Main */
+
+.title-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-color: #173851;
+    color: white;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+h1 {
+    color:#eee;
+    margin: 0;
+}
+.motto {
+    display: none;
+    justify-self: flex-end;
+    align-self: center;
+    color: #e9ea4d;
+}
