@@ -14,8 +14,8 @@ body {
 .logo img {
     padding: 10px;
     width: calc(100% - 20px);
-    min-width: 100px;
-    max-width: 225px;
+    /* min-width: 100px;
+    max-width: 225px; */
 }
 
 .logo-container {
@@ -69,7 +69,6 @@ nav .menuBtn a {
 nav ul {
     padding: 0;
     margin: 0;
-    /* width: 100%; */
     list-style: none;
 }
 
