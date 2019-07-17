@@ -33,7 +33,7 @@ body {
     order: 0;
     flex: 0 1 40%;
     align-self: auto;
-    background-color:pink;
+    background-color:red;
     padding: 10px;
     }
 .logo a {
@@ -57,7 +57,7 @@ nav .menuBtn a {
     color: white;
     display: block;
     height: 100%;
-    margin: 10px 0px 10px 0px;
+    /* margin: 10px 0px 10px 0px; */
     text-align: center;
     /* width: 100%; */
     background-color: #6a6b1e;
