@@ -23,16 +23,17 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: stretch;
-    align-content: stretch;
+    justify-content: flex-end;
+    align-content: flex-end;
     align-items: center;
+    background-color:black;
 }
 
 
 .logo {
-    order: 0;
+    /* order: 0;
     flex: 0 1 40%;
-    align-self: auto;
+    align-self: auto; */
     background-color:red;
     padding: 10px;
     }
@@ -40,9 +41,9 @@ body {
     display: inline;
 }
 .logo-nav {
-    order: 0;
+    /* order: 0;
     flex: 1 1 auto;
-    align-self: auto;
+    align-self: auto; */
     }
 
 
@@ -55,7 +56,7 @@ nav .menuBtn a {
     text-decoration: none;
     font-size: 1.3rem;
     color: white;
-    display: block;
+    display: inline-block;
     height: 100%;
     /* margin: 10px 0px 10px 0px; */
     text-align: center;
