@@ -12,11 +12,11 @@ body {
 }
 
 .logo img {
-    padding: 10px;
-    width: calc(100% - 20px);
-    background-color: red;
-    /* min-width: 100px;
-    max-width: 225px; */
+    /* padding: 10px; */
+    /* width: calc(100% - 20px); */
+    background-color: white;
+    min-width: 100px;
+    max-width: 225px;
 }
 
 .logo-container {
@@ -33,6 +33,8 @@ body {
     order: 0;
     flex: 0 1 40%;
     align-self: auto;
+    background-color:pink;
+    padding: 10px;
     }
 .logo a {
     display: inline;
