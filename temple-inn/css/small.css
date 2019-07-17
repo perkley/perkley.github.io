@@ -14,7 +14,7 @@ body {
 .logo img {
     padding: 10px;
     width: calc(100% - 20px);
-    background-color: pink;
+    background-color: red;
     /* min-width: 100px;
     max-width: 225px; */
 }
@@ -57,7 +57,7 @@ nav .menuBtn a {
     height: 100%;
     margin: 10px 0px 10px 0px;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
     background-color: #6a6b1e;
 }
 
