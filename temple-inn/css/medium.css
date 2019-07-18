@@ -1,8 +1,8 @@
-header {
-    max-width: 1160px;
-    margin: 0 auto;
+h1 {
+    font-size: 1.5rem;
 }
-main {
+
+header, main {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -29,7 +29,7 @@ main {
     text-align: center;
 }
 
-  .navigation li a {
+.navigation li a {
     padding: 0;
     text-decoration: none;
     font-size: 1.2rem;
@@ -88,3 +88,34 @@ main {
     display: inline;
 }
 
+
+
+aside.action-call {
+    position: relative;
+    margin: 0 auto;
+    /* top: -200px; */
+    top: 20px;
+}
+
+aside.action-call div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    background-color: rgba(171, 84, 82, 0.9);
+    border-radius: 10px;    
+}
+
+
+
+section.home div {
+    float:left;
+    width:70%;
+}
+
+section.home aside {
+    float:left;
+    width:30%;
+}

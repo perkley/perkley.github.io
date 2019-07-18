@@ -1,14 +1,53 @@
 /* * */
+* {
+    box-sizing: border-box;
+}
+
 html { 
     margin: 0 auto;
 }
 
-/* BODY */
+/* ELEMENTS */
 
 body {
     font-family: 'Mukta Mahee', sans-serif;
     background-image: url(../images/granite-bg.svg);
     background-size: 100px;
+    margin:0;
+}
+
+a {
+    color:white;
+}
+
+h1 {
+    color:#eee;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+h2 {
+    margin:0;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: white;
+    /* box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); */
+    
+}
+main {
+    /* box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);     */
+    box-shadow: 2px 15px 38px -17px rgba(0,0,0,0.49);
+-webkit-box-shadow: 2px 15px 38px -17px rgba(0,0,0,0.49);
+-moz-box-shadow: 2px 15px 38px -17px rgba(0,0,0,0.49);
+}
+
+ul {
+    /* margin-left: 20px; */
+    display: inline-block;
+    margin-top:0;
+    /* background-color: red; */
 }
 
 
@@ -17,7 +56,8 @@ body {
 
 .logo img {
     padding: 10px;
-    width: calc(100% - 20px);
+    /* width: calc(100% - 20px); */
+    width: 100%;
     /* background-color: white; */
     min-width: 100px;
     max-width: 225px;
@@ -28,6 +68,12 @@ body {
     align-items: center;
     /* background-color:red; */
 }
+
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;  
+} */
 
 .logo-container > ul {
     list-style-type: none;
@@ -132,6 +178,9 @@ nav ul {
     color: white !important;
 }
 
+.dropdown li a {
+    color:#c6c8c3 !important;
+}
 .dropdown .active {
     background-color:#ab5452;
     border-bottom: unset;
@@ -157,6 +206,10 @@ nav ul {
 
 /* MAIN */
 
+/* main {
+    width: 100%;
+} */
+
 .title-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -164,16 +217,160 @@ nav ul {
     background-color: #173851;
     color: white;
     padding: 10px;
-    width: calc(100% - 20px);
+    /* width: calc(100% - 20px); */
 }
 
-h1 {
-    color:#eee;
-    margin: 0;
-}
+
 .motto {
     display: none;
     justify-self: flex-end;
     align-self: center;
     color: #e9ea4d;
 }
+
+.image-full {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+/* aside.action-call { */
+    /* position: relative;
+    margin: 0 auto; */
+/* } */
+
+i.arrow {
+    border: solid #e9ea4d;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+.right {
+    transform: rotate(-45deg);
+}
+
+aside.action-call div {
+    background-color: rgba(171, 84, 82, 1);
+    padding: 0.5em;
+    text-align: center;
+    color: white;   
+}
+
+
+
+/* section.home {
+    margin-bottom: 100px;
+} */
+
+section.home div, section.home aside {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+/* section.home {
+    background-color: white;
+} */
+section.home div {
+    /* background-color:#3c749e; */
+    color:#3c749e;    
+}
+
+section.home aside {
+    text-align: center;
+    /* background-color:#c6c8c3; */
+}
+
+section.home div img {
+    width: 200px;
+    height:200px;
+    float:left;
+    margin-right:20px;
+}
+
+section.home aside img {
+    width: 100%;    
+}
+
+@media screen and (max-width: 400px) {
+    section.home div img {
+        width: 100% !important;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+a.button {
+    background-color: #ab5452;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+
+/* FOOTER */
+
+.social-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 430px) {
+    .social-container {
+        margin-bottom: 60px !important;
+    }
+}
+@media screen and (max-width: 250px) {
+    .social-container {
+        margin-bottom: 80px !important;
+    }
+}
+@media screen and (max-width: 180px) {
+    .social-container {
+        margin-bottom: 100px !important;
+    }
+}
+
+.social-container img {
+    width: 40px;
+    padding: 4px;
+}
+
+.sticky {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ab4342;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+ }
+
+ .contact-number {
+     font-size: 1.2rem;
+     white-space: nowrap;
+ }
+
+ .footer-link-container {
+     display: flex;
+     flex-wrap: wrap;
+ }
