@@ -10,10 +10,10 @@
         "phone": "208-656-0880",
         "email": "email@rexburgtemple.org",
         "services": [
-            { "s1" : "Clothing rental available"},
-            { "s2" : "No cafeteria available"},
-            { "s3" : "No patron housing available"},
-            { "s4" : "Distribution center nearby"}
+            { "service" : "Clothing rental available"},
+            { "service" : "No cafeteria available"},
+            { "service" : "No patron housing available"},
+            { "service" : "Distribution center nearby"}
         ],
         "images" : {
             "small" : "rexburg-temple-320w.jpg",
