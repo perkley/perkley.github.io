@@ -7,7 +7,7 @@
             "small" : "rexburg-temple-320w.jpg",
             "large" : "rexburg-temple-635w.jpg"
         },
-        "image-description" : "Married couple in front of the Rexburg Idaho Temple"
+        "image_description" : "Married couple in front of the Rexburg Idaho Temple"
     },
     {
         "city": "Idaho Falls",
@@ -18,7 +18,7 @@
             "small" : "rexburg-temple-320w.jpg",
             "large" : "rexburg-temple-635w.jpg"
         },
-        "image-description" : "Idaho Falls Temple Description"    
+        "image_description" : "Idaho Falls Temple Description"    
     }
     
 ]}
