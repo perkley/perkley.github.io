@@ -88,15 +88,17 @@
                         Our mission is to provide unique services for temple patrons, families, and visiting friends.
                     </p>
                     <p>
-                        Some of our Services
-                        <ul>
-                            <li>Changing rooms to get into church clothes</li>
-                            <li>Short-term babysitting</li>
-                            <li>Long-term stay options</li>
-                            <li>Temple history resources</li>
-                            <li>Reception hall</li>
-                            <li>Catering</li>
-                        </ul>
+                        <section class="home-services-list">
+                            <h3>Some of our Services</h3>
+                            <ul>
+                                <li>Changing rooms to get into church clothes</li>
+                                <li>Short-term babysitting</li>
+                                <li>Long-term stay options</li>
+                                <li>Family history resources</li>
+                                <li>Reception hall</li>
+                                <li>Catering</li>
+                            </ul>
+                        </section>
                     </p>
                     
                     <p>
@@ -107,7 +109,7 @@
                     
                 </div>
 
-                <aside>
+                <aside data-limit="1" data-summary-only="true" class="temple-data">
                     <h2>Rexburg Idaho Temple</h2>    
                     <picture>
                         <source media="(max-width: 320px)" srcset="images/rexburg-temple-320w.jpg">
@@ -115,7 +117,8 @@
                         <img src="images/rexburg-temple-320w.jpg" alt="Married couple in front of the Rexburg Idaho Temple">
                     </picture>
                     <!-- <img src="images/rexburg-temple-320w.jpg" alt="Married couple in front of the Rexburg Idaho Temple"> -->
-                    What a great temple    
+                    What a great temple
+                    <a href="json/temples.json" style="color:brown">Json Data</a>    
                 </aside>
             </section>
             
@@ -141,6 +144,7 @@
         </footer>
 
         <script src="js/main.js"></script>
+        <script src="js/templedata.js"></script>
 
     </body>
 
