@@ -1,0 +1,14 @@
+{"temples":[{
+        "city": "Rexburg",
+        "state": "Idaho",
+        "country": "USA",
+        "summary": "This is the summary information for the Rexburg Idaho Temple"
+    },
+    {
+        "city": "Idaho Falls",
+        "state": "Idaho",
+        "country": "USA",
+        "summary": "Idaho Falls Temple Summary"    
+    }
+    
+]}
