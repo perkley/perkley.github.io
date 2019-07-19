@@ -4,8 +4,8 @@
         "country": "USA",
         "summary": "This is the summary information for the Rexburg Idaho Temple",
         "images" : [{
-            "320" : "rexburg-temple-320w.jpg",
-            "635" : "rexburg-temple-635w"
+            "small" : "rexburg-temple-320w.jpg",
+            "large" : "rexburg-temple-635w.jpg"
         }],
         "image-description" : "Married couple in front of the Rexburg Idaho Temple"
     },
@@ -15,8 +15,8 @@
         "country": "USA",
         "summary": "Idaho Falls Temple Summary",
         "images" : [{
-            "320" : "rexburg-temple-320w.jpg",
-            "635" : "rexburg-temple-635w"
+            "small" : "rexburg-temple-320w.jpg",
+            "large" : "rexburg-temple-635w.jpg"
         }],
         "image-description" : "Idaho Falls Temple Description"    
     }
