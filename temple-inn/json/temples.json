@@ -2,13 +2,23 @@
         "city": "Rexburg",
         "state": "Idaho",
         "country": "USA",
-        "summary": "This is the summary information for the Rexburg Idaho Temple"
+        "summary": "This is the summary information for the Rexburg Idaho Temple",
+        "images" : [{
+            "320" : "rexburg-temple-320w.jpg",
+            "635" : "rexburg-temple-635w"
+        }],
+        "image-description" : "Married couple in front of the Rexburg Idaho Temple"
     },
     {
         "city": "Idaho Falls",
         "state": "Idaho",
         "country": "USA",
-        "summary": "Idaho Falls Temple Summary"    
+        "summary": "Idaho Falls Temple Summary",
+        "images" : [{
+            "320" : "rexburg-temple-320w.jpg",
+            "635" : "rexburg-temple-635w"
+        }],
+        "image-description" : "Idaho Falls Temple Description"    
     }
     
 ]}

@@ -29,6 +29,12 @@ h1 {
 h2 {
     margin:0;
     margin-bottom: 20px;
+    color: #6a6b1e;
+}
+
+h3 {
+    margin-top: 0;
+    color: #6a6b1e
 }
 
 section {
@@ -286,7 +292,8 @@ section.home div img {
     width: 200px;
     height:200px;
     float:left;
-    margin-right:20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 section.home aside img {
@@ -300,6 +307,9 @@ section.home aside img {
     }
 }
 
+.home-services-list {
+    overflow: hidden;
+}
 
 
 
