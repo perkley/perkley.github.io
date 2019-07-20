@@ -1,4 +1,5 @@
-let templeInfoContainer = document.querySelector('div#templeInfoContainer');
+let br = '<br>';
+let tStr = '';
 
 let requestURL = 'https://perkley.github.io/temple-inn/json/temples.json';
 let request = new XMLHttpRequest();
@@ -8,81 +9,309 @@ request.send();
 
 request.onload = function() {
     let templeData = request.response;
+    console.log(templeData);
     showTempleData(templeData);
 }
-
-
-// var townDataFound = {preston:0, sodaSprings:0, fishHaven:0};
-// var townNamesIncluded = ['preston', 'soda springs', 'fish haven'];
 
 function showTempleData(jsonObj) {
     let temples = jsonObj['temples'];
     let summaryOnly = templeInfoContainer.getAttribute("data-summary-only");
-    summaryOnly = (summaryOnly == 'undefined') ? false : summaryOnly;
+    summaryOnly = (summaryOnly == 'undefined') ? false : (summaryOnly=='true') ? true : false;
     let dataLimit = templeInfoContainer.getAttribute("data-limit");
     dataLimit = (dataLimit != 'undefined') ? dataLimit : -1;  //-1 means all
-    // var regexTowns = new RegExp(townNamesIncluded[0] + "|" + townNamesIncluded[1] + "|" + townNamesIncluded[2]);
-
-    if (dataLimit == 1) {
-        let min = 0; 
-        let max = temples.length - 1;  
-        var random = Math.floor(Math.random() * (+max - +min)) + +min; 
-    }
 
     if (dataLimit == 1) {
         //Show a random temple information
+        let min = 0; 
+        let max = temples.length;  
+        var random = Math.floor(Math.random() * (+max - +min)) + +min;
         createTempleInfo(temples, random, summaryOnly);
     } else {
         for (let i = 0; i < temples.length; i++) {
             createTempleInfo(temples, i, summaryOnly);
-            // let temple = temples[i].city + " " + temples[i].state;
-            // if (!regexTowns.test(townName)) {
-            //     continue;
-            // }
-
-            // console.log(temple);
-            // console.log(summaryOnly);
-            // console.log(dataLimit);
-            //createDataArticle(towns, townName, i); 
         }
     }
-
-    // for (x in townDataFound) {
-    //     if (townDataFound[x] == 0) {
-    //         createDataArticle(towns, x, -1);
-    //     }
-    // }
 }
 
 function createTempleInfo(temples, idx, summaryOnly) {
-    let templeInfoArticle = document.createElement('article');
-    let titleH2 = document.createElement('h2');
-    let templePicture = document.createElement('picture');
+
+    let templeInfoContainer = (summaryOnly) ? document.querySelector('#templeInfoContainer') : document.querySelector('.temple-detail-container');          
+
+// ******** CREATE "TEMPLE TITLE" DIV ************************
+    let tDivTitle = document.createElement('div');
+    tDivTitle.setAttribute("class", "temple-title");
+    let tH2Title = document.createElement('h2');
+
+    tH2Title.textContent = temples[idx].address.city + " " + temples[idx].address.state + " Temple";
+    tDivTitle.appendChild(tH2Title);
+
+
+// ******** CREATE "TEMPLE INFO" DIV ************************
+    let tDivInfo = document.createElement('div');
+    tDivInfo.setAttribute("class", "temple-info");
+
+    //Address
+    // let tStrongAddr = document.createElement('strong');
+    // tStrongAddr.textContent = "Address";
+    // tDivInfo.appendChild(tStrongAddr);
     
-    let templeImg = document.createElement('img');
+    let tPAddr = document.createElement('p');
+    tPAddr.innerHTML =  "<strong>Address</strong>" + br + temples[idx].address.street + br +
+        temples[idx].address.city + ' ' + temples[idx].address.state_abbr + ' ' + temples[idx].address.postal + br +
+        temples[idx].address.country;
+    tDivInfo.appendChild(tPAddr);
 
-    titleH2.textContent = temples[idx].city + " " + temples[idx].state + " Temple";
+    //Phone
+    // let tStrongPhone = document.createElement('strong');
+    // tStrongPhone.textContent = "Telephone";
+    // tDivInfo.appendChild(tStrongPhone);
+    
+    let tPPhone = document.createElement('p');
+    tPPhone.innerHTML =  "<strong>Telephone</strong>" + br + temples[idx].phone;
+    tDivInfo.appendChild(tPPhone);
 
-    for (let i = 0; i < temples[idx].images.length; i++) {
-        let templeSource = document.createElement('source');
-        templeSource.media = "(max-width: 320px)";
-        console.log(temples[idx].images[i]);
-        templeSource.srcset = "images/" + temples[idx].images[i];
-        templePicture.appendChild(templeSource);
+    //Email
+    // let tStrongEmail = document.createElement('strong');
+    // tStrongEmail.textContent = "Email";
+    // tDivInfo.appendChild(tStrongEmail);
+    
+    let tPEmail = document.createElement('p');
+    tPEmail.innerHTML =  "<strong>Email</strong>" + br + temples[idx].email;
+    tDivInfo.appendChild(tPEmail);
+
+    //Services
+    // let tStrongServices = document.createElement('strong');
+    // tStrongServices.textContent = "Services";
+    // tDivInfo.appendChild(tStrongServices);
+    
+    let tPServices = document.createElement('p');
+    tStr = '';
+    for (s=0; s < temples[idx].services.length; s++) {
+        tStr += temples[idx].services[s].service + br;
+    }
+    tPServices.innerHTML =  "<strong>Services</strong>" + br + tStr;
+    tDivInfo.appendChild(tPServices);
+
+
+
+
+// ******** CREATE "TEMPLE PIC" DIV ************************
+    let tDivPic = document.createElement('div');
+    tDivPic.setAttribute("class", "temple-pic");
+    let tPic = document.createElement('picture');
+    let tPicSrcSmall = document.createElement('source');
+    let tPicSrcLarge = document.createElement('source');
+    let tPicImg = document.createElement('img');
+
+    tPicSrcSmall.media = "(max-width: 320px)";
+    tPicSrcSmall.srcset = "images/" + temples[idx].images.small;
+
+    tPicSrcLarge.media = "(max-width: 675px)";
+    tPicSrcLarge.srcset = "images/" + temples[idx].images.large;
+
+    tPicImg.src = "images/" + temples[idx].images.small;
+    tPicImg.alt = temples[idx].images.image_description;
+
+    tPic.appendChild(tPicSrcSmall);
+    tPic.appendChild(tPicSrcLarge);
+    tPic.appendChild(tPicImg);
+    tDivPic.appendChild(tPic);
+
+
+
+// ******** CREATE "TEMPLE SUMMARY" DIV ************************
+    let tDivSummary = document.createElement('div');
+    tDivSummary.setAttribute("class", "temple-summary");
+
+    let tPWeather = document.createElement('p');
+    tPWeather.setAttribute("class", "temple-weather");
+    getTempleCityWeather(temples[idx].openweathermap_cityid, tDivSummary, tPWeather);
+    // console.log(tSpanTemp);
+
+
+
+
+// ******** CREATE "TEMPLE DETAIL" DIV ************************
+    let tDivDetail = document.createElement('div');
+    tDivDetail.setAttribute("class", "temple-detail");
+
+    //Ordinances
+    let tH3Ordinance = document.createElement('h3');
+    tH3Ordinance.textContent = "Ordinance Schedules";
+    tDivDetail.appendChild(tH3Ordinance);
+
+    //Ordinance: Baptism
+    // let tStrongBaptistryGroup = document.createElement('strong');
+    // tStrongBaptistryGroup.textContent = br + "Baptistry Schedule";
+    // tDivDetail.appendChild(tStrongBaptistryGroup);
+
+    let tPBaptistry = document.createElement('p');
+    // let tEmBaptistryGroups = document.createElement('em');
+    // tEmBaptistryGroupsinnerHTML =  "<strong>Baptistry Schedule</strong>" + br + " Church Groups";
+    // tDivDetail.appendChild(tEmBaptistryGroups);
+
+    tStr = '';
+    let jBaptGroup = temples[idx].ordinance_schedule.baptism.church_groups;
+    for (s=0; s < jBaptGroup.length; s++) {
+        tStr += jBaptGroup[s].time_from + ' - ' + jBaptGroup[s].time_to +
+            ' - ' + jBaptGroup[s].info + br;
+    }
+    tPBaptistry.innerHTML =  "<strong>Baptistry Schedule</strong> <em>Church Groups</em>" + br + tStr;
+    tDivDetail.appendChild(tPBaptistry);
+
+    // let tStrongBaptistryFamily = document.createElement('strong');
+    // tStrongBaptistryFamily.textContent = br + "Baptistry Schedule";
+    // tDivDetail.appendChild(tStrongBaptistryFamily);
+
+    // let tEmBaptistryFamily = document.createElement('em');
+    // tEmBaptistryFamily.textContent = " Family Priority Time";
+    // tDivDetail.appendChild(tEmBaptistryFamily);
+
+    let tPBaptistryF = document.createElement('p');
+    tStr = '';
+    let jBaptFamily = temples[idx].ordinance_schedule.baptism.family_priority_time;
+    for (s=0; s < jBaptFamily.length; s++) {
+        tStr += jBaptFamily[s].time_from + ' - ' + jBaptFamily[s].time_to +
+            ' - ' + jBaptFamily[s].info + br;
+    }
+    tPBaptistryF.innerHTML =  "<strong>Baptistry Schedule</strong> <em>Family Priority Time</em>" + br + tStr;
+    tDivDetail.appendChild(tPBaptistryF);
+    
+    //Ordinance: Initiatory
+    // let tStrongInitiatory = document.createElement('strong');
+    // tStrongInitiatory.textContent = br + "Initiatory Schedule";
+    // tDivDetail.appendChild(tStrongInitiatory);
+
+    let tPInitiatory = document.createElement('p');
+    tStr = '';
+    let jInit = temples[idx].ordinance_schedule.initiatory;
+    for (s=0; s < jInit.length; s++) {
+        tStr += jInit[s].time_from + ' - ' + jInit[s].time_to +
+            ' - ' + jInit[s].info + br;
+    }
+    tPInitiatory.innerHTML =  "<strong>Initiatory Schedule</strong>" + br + tStr;
+    tDivDetail.appendChild(tPInitiatory);
+
+    //Ordinance: Endowment
+    // let tStrongEndowment = document.createElement('strong');
+    // tStrongEndowment.textContent = br + "Endowment Schedule";
+    // tDivDetail.appendChild(tStrongEndowment);
+
+    let tPEndowment = document.createElement('p');
+    tStr = '';
+    let jEnd = temples[idx].ordinance_schedule.endowment;
+    for (s=0; s < jEnd.length; s++) {
+        tStr += jEnd[s].start_time + ' - ' + jEnd[s].info + br;
+    }
+    tPEndowment.innerHTML =  "<strong>Endowment Schedule</strong>" + br + tStr;
+    tDivDetail.appendChild(tPEndowment);
+
+    //Ordinance: Sealing
+    // let tStrongSealing = document.createElement('strong');
+    // tStrongSealing.textContent = br + "Sealing Schedule";
+    // tDivDetail.appendChild(tStrongSealing);
+
+    let tPSealing = document.createElement('p');
+    tStr = '';
+    let jSeal = temples[idx].ordinance_schedule.sealing;
+    for (s=0; s < jSeal.length; s++) {
+        tStr += jSeal[s].time_from + ' - ' + jSeal[s].time_to +
+            ' - ' + jSeal[s].info + br;
+    }
+    tPSealing.innerHTML =  "<strong>Sealing Schedule</strong>" + br + tStr;
+    tDivDetail.appendChild(tPSealing);
+    
+
+    //Temple Closures
+    let tH3Closures = document.createElement('h3');
+    tH3Closures.textContent = "Temple Closures";
+    tDivDetail.appendChild(tH3Closures);
+
+    tStr = '';
+    let jClosureYear = temples[idx].closures;
+    for (s=0; s < jClosureYear.length; s++) {
+        //Output the Year
+        let tH4ClosureYear = document.createElement('h4');
+        tH4ClosureYear.textContent = jClosureYear[s].year;
+        tDivDetail.appendChild(tH4ClosureYear);
+
+        let tULClosures = document.createElement('ul');
+
+        //Get the Listings
+        tStr = '';
+        let jClosureData = jClosureYear[s].closed;
+        let tPClosure = document.createElement('p');
+        let tLIClosure = [];
+        for (c=0; c < jClosureData.length; c++) {
+            tLIClosure[c] = document.createElement('li'); 
+            tStr = jClosureData[c].date_from + ' - ' + jClosureData[c].date_to;
+            tLIClosure[c].textContent = tStr;
+            tULClosures.appendChild(tLIClosure[c]);
+        }
+        tPClosure.appendChild(tULClosures);
+        tDivDetail.appendChild(tPClosure);
+        
     }
 
 
+    //Milestones
+    let tH3Milestones = document.createElement('h3');
+    tH3Milestones.textContent = "Milestones";
+    tDivDetail.appendChild(tH3Milestones);
+
+    let tPMileStones = document.createElement('p');
+    tStr = '';
+    let jMile = temples[idx].milestones;
+    for (s=0; s < jMile.length; s++) {
+        tStr += jMile[s].date + ' - ' + jMile[s].title;
+        if (jMile[s].url_title != '') {
+            if (jMile[s].url != '') {
+                tStr += ' - <a href="'+ jMile[s].url +'" target="_blank">'+ jMile[s].url_title +'</a>';
+            } else tStr += ' - ' + jMile[s].url_title;
+        }
+            
+        tStr += br;
+
+    }
+    tPMileStones.innerHTML = tStr;
+    tDivDetail.appendChild(tPMileStones);
+
+
+// ******** ADD DIV SECTIONS TO CONTAINER ************************
+    templeInfoContainer.appendChild(tDivTitle);
+    templeInfoContainer.appendChild(tDivInfo);
+    templeInfoContainer.appendChild(tDivPic);
+    templeInfoContainer.appendChild(tDivSummary);
+    templeInfoContainer.appendChild(tDivDetail);
+
+
+    return;
+
+
+    titleH2.textContent = temples[idx].address.city + " " + temples[idx].address.state + " Temple";
+
+    templeSourceSmall.media = "(max-width: 320px)";
+    templeSourceSmall.srcset = "images/" + temples[idx].images.small;
+
+    templeSourceLarge.media = "(max-width: 675px)";
+    templeSourceLarge.srcset = "images/" + temples[idx].images.large;
+
+    templeImg.src = "images/" + temples[idx].images.small;
+    templeImg.alt = temples[idx].image_description;
+
+
+    //Create the picture tag
+    templePicture.appendChild(templeSourceSmall);
+    templePicture.appendChild(templeSourceLarge);
+    templePicture.appendChild(templeImg);
+
+    //Output main sections to the div
     templeInfoArticle.appendChild(titleH2);
     templeInfoArticle.appendChild(templePicture);
     templeInfoContainer.appendChild(templeInfoArticle);
 
 
-    // <picture>
-    //     <source media="(max-width: 320px)" srcset="images/rexburg-temple-320w.jpg">
-    //     <source media="(max-width: 675px)" srcset="images/rexburg-temple-635w.jpg">
-    //     <img src="images/rexburg-temple-320w.jpg" alt="Married couple in front of the Rexburg Idaho Temple">
-    // </picture>
-
+    
     // let dataFound = (i > -1);
     // var townArticle = document.createElement('article');
     // var townFlexSection = document.createElement('section');
@@ -158,4 +387,52 @@ function createTempleInfo(temples, idx, summaryOnly) {
     // townArticle.appendChild(townFlexSection);
 
     // townDataContainer.appendChild(townArticle);
+}
+
+function getTempleCityWeather(cityID, parentObjElement, objElement) {
+    // let weatherRequest = new XMLHttpRequest();
+    // let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&units=imperial&APPID=66f6d6a1e23693c441db2a9ca11bd964'
+    // weatherRequest.open('Get', apiURLstring, true);
+    // weatherRequest.send();
+
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4){
+            // document.getElementById('result').innerHTML = xhr.responseText;
+            let weatherData = JSON.parse(xhr.responseText);
+            //console.log(weatherData);
+            
+            // let tStrongWeather = document.createElement('strong');
+            // tStrongWeather.textContent = br + "Current Weather" + br;
+            // parentObjElement.appendChild(tStrongWeather);
+
+            let tStr = weatherData.main.temp + "\u00B0 F - " +
+                weatherData.weather[0].description;
+            objElement.innerHTML =  "<strong>Current Weather</strong>" + br + tStr;
+            parentObjElement.appendChild(objElement);
+        }
+    };
+    xhr.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&units=imperial&APPID=66f6d6a1e23693c441db2a9ca11bd964');
+    xhr.send();
+
+    // request.onload = function() {
+        // let templeData = request.response;
+        //showTempleData(templeData);
+        // let weatherData = JSON.parse(weatherRequest.responseText);
+        // console.log(weatherData);
+
+    // document.getElementById('cc-temp').innerHTML = weatherData.main.temp;
+    // }
+    // let weatherData = JSON.parse(weatherRequest.responseText);
+    // console.log(weatherData);
+
+    // document.getElementById('cc-temp').innerHTML = weatherData.main.temp;
+
+    // let desc = weatherData.weather[0].description;
+    // let icon = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
+
+    // document.getElementById("cc-img").setAttribute("src", icon);
+    // document.getElementById("cc-img").setAttribute("alt", desc);
+
+    //return weatherData.main.temp;
 }

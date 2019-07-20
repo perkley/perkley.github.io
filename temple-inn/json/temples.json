@@ -96,12 +96,12 @@
             "country": "United States"
         },    
         "phone": "208-656-0880",
-        "email": "email@rexburgtemple.org",
+        "email": "email@idahofallstemple.org",
         "services": [
-            { "s1" : "Clothing rental available"},
-            { "s2" : "No cafeteria available"},
-            { "s3" : "No patron housing available"},
-            { "s4" : "Distribution center nearby"}
+            { "service" : "Clothing rental available"},
+            { "service" : "No cafeteria available"},
+            { "service" : "No patron housing available"},
+            { "service" : "Distribution center nearby"}
         ],
         "images" : {
             "small" : "rexburg-temple-320w.jpg",
@@ -109,9 +109,9 @@
             "image_description" : "Married couple in front of the Rexburg Idaho Temple"
         },
         "milestones" : [
-            { "Date" : "12 December 2003", "title" : "Announced", "url_title" : "", "url": "" },
-            { "Date" : "30 July 2005", "title" : "Groundbreaking", "url_title" : "", "url": "" },
-            { "Date" : "10 February 2008", "title": "Dedicated", "url_title" : "dedicatory prayer", "url" : "https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple/prayer/2008-02-10" }
+            { "date" : "12 December 2003", "title" : "Announced", "url_title" : "", "url": "" },
+            { "date" : "30 July 2005", "title" : "Groundbreaking", "url_title" : "", "url": "" },
+            { "date" : "10 February 2008", "title": "Dedicated", "url_title" : "dedicatory prayer", "url" : "https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple/prayer/2008-02-10" }
         ],
         "ordinance_schedule" : {
             "baptism": {
@@ -171,7 +171,7 @@
                 {"date_from": "Thursday, 31 December 2020", "date_to": "Friday, 1 January 2021"}
             ]} 
         ],
-        "summary": "Idaho Falls is a nice little town",
+        "summary": "Rexburg is a nice little town",
         "openweathermap_cityid" : "5605242"
     }
     
