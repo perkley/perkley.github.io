@@ -21,9 +21,9 @@
             "image_description" : "Married couple in front of the Rexburg Idaho Temple"
         },
         "milestones" : [
-            { "Date" : "12 December 2003", "title" : "Announced", "url_title" : "", "url": "" },
-            { "Date" : "30 July 2005", "title" : "Groundbreaking", "url_title" : "", "url": "" },
-            { "Date" : "10 February 2008", "title": "Dedicated", "url_title" : "dedicatory prayer", "url" : "https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple/prayer/2008-02-10" }
+            { "date" : "12 December 2003", "title" : "Announced", "url_title" : "", "url": "" },
+            { "date" : "30 July 2005", "title" : "Groundbreaking", "url_title" : "", "url": "" },
+            { "date" : "10 February 2008", "title": "Dedicated", "url_title" : "dedicatory prayer", "url" : "https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple/prayer/2008-02-10" }
         ],
         "ordinance_schedule" : {
             "baptism": {
