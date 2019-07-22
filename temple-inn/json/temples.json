@@ -104,8 +104,8 @@
             { "service" : "Distribution center nearby"}
         ],
         "images" : {
-            "small" : "rexburg-temple-320w.jpg",
-            "large" : "rexburg-temple-635w.jpg",
+            "small" : "idahofalls-temple-320w.jpg",
+            "large" : "idahofalls-temple-635w.jpg",
             "image_description" : "Married couple in front of the Rexburg Idaho Temple"
         },
         "milestones" : [
@@ -192,8 +192,8 @@
             { "service" : "Distribution center nearby"}
         ],
         "images" : {
-            "small" : "rexburg-temple-320w.jpg",
-            "large" : "rexburg-temple-635w.jpg",
+            "small" : "laie-temple-320w.jpg",
+            "large" : "laie-temple-635w.jpg",
             "image_description" : "Married couple in front of the Rexburg Idaho Temple"
         },
         "milestones" : [
@@ -265,9 +265,9 @@
     {
         "address": {
             "street": "750 S 2nd E",
-            "city": "Manhatton",
-            "state_abbr": "NY",
-            "state": "New York",
+            "city": "St. George",
+            "state_abbr": "UT",
+            "state": "Utah",
             "postal": "83440-5404",
             "country": "United States"
         },    
@@ -280,8 +280,8 @@
             { "service" : "Distribution center nearby"}
         ],
         "images" : {
-            "small" : "rexburg-temple-320w.jpg",
-            "large" : "rexburg-temple-635w.jpg",
+            "small" : "stgeorge-temple-320w.jpg",
+            "large" : "stgeorge-temple-635w.jpg",
             "image_description" : "Married couple in front of the Rexburg Idaho Temple"
         },
         "milestones" : [

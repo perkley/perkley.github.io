@@ -16,6 +16,10 @@ body {
     margin:0;
 }
 
+main {
+
+}
+
 a {
     color:white;
 }
@@ -55,8 +59,6 @@ ul {
     margin-top:0;
     /* background-color: red; */
 }
-
-
 
 /* NAVIGATION */
 
@@ -288,7 +290,7 @@ section.home aside {
     /* background-color:#c6c8c3; */
 }
 
-section.home div img {
+section.home>div img {
     width: 200px;
     height:200px;
     float:left;
@@ -296,9 +298,10 @@ section.home div img {
     margin-bottom: 10px;
 }
 
-section.home aside img {
+/* section.home aside img {
     width: 100%;    
-}
+} */
+
 
 @media screen and (max-width: 400px) {
     section.home div img {
@@ -331,6 +334,84 @@ a.button {
     font-size: 1.2rem;
     text-transform: uppercase;
 }
+
+
+
+/* TEMPLE DETAIL */
+
+.temple-detail-container { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr; 
+    grid-template-areas: 
+        "title"
+        "pic"
+        "info"
+        "summary"
+        "detail";
+    grid-gap: 20px;  
+}
+.temple-title { grid-area: title; }
+.temple-info { grid-area: info; } 
+.temple-pic { grid-area: pic; }
+.temple-summary {grid-area: summary; } 
+.temple-detail { grid-area: detail; }
+
+.temple-pic img {
+    width: 100%;
+}
+
+.temple-detail-container h2 {
+    margin: 0;
+}
+
+.temple-detail-container h3 {
+    background-color: #6a6b1e;
+    color: white;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.temple-detail-container p {
+    /* Allows the passed in \r\n to do line breaks, see address for the temple as an example */
+    /* white-space: pre; */
+    margin-top: 0;
+}
+
+.temple-detail-container a {
+    color: #6a6b1e;
+}
+
+.temple-weather {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.temple-summary-container, .temple-summary-container div div {
+    padding: 0 !important;
+    width: 100% !important;    
+}
+
+.temple-summary-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.temple-summary-container div {
+    width: 260px;
+    margin: 0 auto;
+}
+
+#templeInfoContainer {
+    width: 100%;
+    padding: 0;
+}
+
+
 
 
 /* FOOTER */
@@ -384,3 +465,9 @@ a.button {
      display: flex;
      flex-wrap: wrap;
  }
+
+
+ /* FORMATTING */
+.section-padding {
+    padding: 20px !important;
+}

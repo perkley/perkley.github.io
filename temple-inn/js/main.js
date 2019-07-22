@@ -5,6 +5,8 @@ function showMenu() {
     document.getElementById("nav").style.width = vWidth;
 }
 
+
+
 // window.onscroll = function() {myFunction()};
 
 // var header = document.getElementById("mainHeader");

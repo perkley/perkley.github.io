@@ -119,3 +119,16 @@ section.home aside {
     float:left;
     width:30%;
 }
+
+
+/* TEMPLE DETAIL */
+.temple-detail-container { 
+    /* display: grid; */
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "title pic"
+        "info pic"
+        "info summary"
+        "detail detail";
+    /* grid-gap: 20px;  */
+}
