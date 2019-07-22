@@ -35,7 +35,7 @@
                 ]
             },
             "initiatory": [
-                { "time_from" : "6:00", "time_to": "8:00 PM", "info": "Walk-ins Only"}
+                { "time_from" : "6:00 AM", "time_to": "8:00 PM", "info": "Walk-ins Only"}
             ],
             "endowment": [
                 { "start_time" : "6:00 AM", "info": "Walk-ins Only"},
@@ -106,7 +106,7 @@
         "images" : {
             "small" : "idahofalls-temple-320w.jpg",
             "large" : "idahofalls-temple-635w.jpg",
-            "image_description" : "Married couple in front of the Rexburg Idaho Temple"
+            "image_description" : "View of the Idaho Falls Temple"
         },
         "milestones" : [
             { "date" : "3 March 1937", "title" : "Announced", "url_title" : "", "url": "" },
@@ -124,7 +124,7 @@
                 ]
             },
             "initiatory": [
-                { "time_from" : "6:00", "time_to": "6:00 PM", "info": "Walk-ins Only"}
+                { "time_from" : "6:00 AM", "time_to": "6:00 PM", "info": "Walk-ins Only"}
             ],
             "endowment": [
                 { "start_time" : "6:00 AM", "info": "Walk-ins Only"},
@@ -172,185 +172,180 @@
     },
     {
         "address": {
-            "street": "750 S 2nd E",
+            "street": "55-600 Naniloa Loop",
             "city": "Laie",
             "state_abbr": "HI",
             "state": "Hawaii",
-            "postal": "83440-5404",
+            "postal": "96762-2202",
             "country": "United States"
         },    
-        "phone": "208-656-0880",
-        "email": "email@idahofallstemple.org",
+        "phone": "808-293-2427",
+        "email": "email@laietemple.org",
         "services": [
             { "service" : "Clothing rental available"},
-            { "service" : "No cafeteria available"},
+            { "service" : "Cafeteria available"},
             { "service" : "No patron housing available"},
             { "service" : "Distribution center nearby"}
         ],
         "images" : {
             "small" : "laie-temple-320w.jpg",
             "large" : "laie-temple-635w.jpg",
-            "image_description" : "Married couple in front of the Rexburg Idaho Temple"
+            "image_description" : "Church members standing in front of the Laie Hawaii Temple."
         },
         "milestones" : [
-            { "date" : "12 December 2003", "title" : "Announced", "url_title" : "", "url": "" },
-            { "date" : "30 July 2005", "title" : "Groundbreaking", "url_title" : "", "url": "" },
-            { "date" : "10 February 2008", "title": "Dedicated", "url_title" : "dedicatory prayer", "url" : "https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple/prayer/2008-02-10" }
+            { "date" : "3 October 1915", "title" : "Announced", "url_title" : "", "url": "" },
+            { "date" : "8 February 1916", "title" : "Groundbreaking", "url_title" : "", "url": "" },
+            { "date" : "27 November 1919", "title": "Dedicated", "url_title" : "dedicatory prayer", "url" : "https://www.churchofjesuschrist.org/temples/details/laie-hawaii-temple/prayer/1919-11-27" },
+            { "date" : "13 June 1978", "title": "Rededicated", "url_title" : "dedicatory prayer", "url" : "https://www.churchofjesuschrist.org/temples/details/laie-hawaii-temple/prayer/1978-06-13" },
+            { "date" : "21 November 2010", "title": "Rededicated", "url_title" : "dedicatory prayer", "url" : "https://www.churchofjesuschrist.org/temples/details/laie-hawaii-temple/prayer/2010-11-21" }
         ],
         "ordinance_schedule" : {
             "baptism": {
                 "church_groups": [
-                    {"time_from": "4:00 PM", "time_to": "6:00 PM", "info": "Appointments Only"}    
+                    {"time_from": "6:30 AM", "time_to": "7:30 AM", "info": "Appointments Only"},
+                    {"time_from": "8:30 AM", "time_to": "9:30 AM", "info": "Appointments Only"}  
                 ],
                 "family_priority_time": [
-                    {"time_from": "6:00 PM", "time_to": "8:00 PM", "info": "Walk-ins and Appointments"} 
+                    {"time_from": "5:30 PM", "time_to": "6:30 PM", "info": "Appointments Only"} 
                 ]
             },
             "initiatory": [
-                { "time_from" : "6:00", "time_to": "8:00 PM", "info": "Walk-ins Only"}
+                { "time_from" : "6:00 AM", "time_to": "11:00 AM", "info": "Walk-ins and Appointments"},
+                { "time_from" : "12:00 PM", "time_to": "1:00 PM", "info": "Walk-ins and Appointments"}
             ],
             "endowment": [
-                { "start_time" : "6:00 AM", "info": "Walk-ins Only"},
-                { "start_time" : "6:45 AM", "info": "Walk-ins Only"},
-                { "start_time" : "7:30 AM", "info": "Walk-ins Only"},
-                { "start_time" : "8:15 AM", "info": "Walk-ins and Appointments"},
-                { "start_time" : "9:00 AM", "info": "Walk-ins and Appointments"},
-                { "start_time" : "9:45 AM", "info": "Walk-ins Only"},
-                { "start_time" : "10:30 AM", "info": "Walk-ins Only"},
-                { "start_time" : "11:15 AM", "info": "Walk-ins Only"},
-                { "start_time" : "12:00 PM", "info": "Walk-ins Only"},
-                { "start_time" : "12:45 PM", "info": "Walk-ins and Appointments"},
-                { "start_time" : "1:30 PM", "info": "Walk-ins Only"},
-                { "start_time" : "2:15 PM", "info": "Walk-ins Only"},
-                { "start_time" : "3:00 PM", "info": "Walk-ins and Appointments"},
-                { "start_time" : "3:45 PM", "info": "Walk-ins Only"},
-                { "start_time" : "4:30 PM", "info": "Walk-ins Only"},
-                { "start_time" : "5:15 PM", "info": "Walk-ins and Appointments"},
-                { "start_time" : "6:00 PM", "info": "Walk-ins Only"},
-                { "start_time" : "6:45 PM", "info": "Walk-ins Only"},
-                { "start_time" : "7:30 PM", "info": "Walk-ins and Appointments"}
+                { "start_time" : "7:00 AM", "info": "Walk-ins Only - English"},
+                { "start_time" : "8:00 AM", "info": "Walk-ins and Appointments - English"},
+                { "start_time" : "9:00 AM", "info": "Walk-ins and Appointments - English"},
+                { "start_time" : "10:00 AM", "info": "Walk-ins and Appointments - English"},
+                { "start_time" : "11:00 AM", "info": "Walk-ins and Appointments - English"},
+                { "start_time" : "12:00 PM", "info": "Walk-ins Only - English"},
+                { "start_time" : "1:00 PM", "info": "Walk-ins and Appointments - English"},
+                { "start_time" : "2:00 PM", "info": "Walk-ins and Appointments - English"},
+                { "start_time" : "4:00 PM", "info": "Walk-ins and Appointments - English"},
+                { "start_time" : "5:00 PM", "info": "Walk-ins Only - English"},
+                { "start_time" : "6:00 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "7:00 PM", "info": "Walk-ins and Appointments - English"},
+                { "start_time" : "8:00 PM", "info": "Walk-ins Only - English"}
             ],
             "sealing": [
-                {"time_from": "7:00 AM", "time_to": "8:00 PM", "info": "Walk-ins and Appointments"}
+                {"time_from": "7:00 AM", "time_to": "8:00 AM", "info": "Walk-ins and Appointments"},
+                {"time_from": "8:00 AM", "time_to": "4:00 PM", "info": "Appointments Only"},
+                {"time_from": "4:00 PM", "time_to": "6:00 PM", "info": "Walk-ins and Appointments"},
+                {"time_from": "6:00 PM", "time_to": "8:00 PM", "info": "Appointments Only"},
+                {"time_from": "8:00 PM", "time_to": "9:00 PM", "info": "Walk-ins and Appointments"}
             ]
         },
         "closures" : [
             {"year": "2019", "closed": [
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""}
+                {"date_from": "Friday, 4 October 2019", "date_to": ""},
+                {"date_from": "Saturday, 5 October 2019", "date_to": ""},
+                {"date_from": "Wednesday, 27 November 2019", "date_to": ""},
+                {"date_from": "Thursday, 28 November 2019", "date_to": ""},
+                {"date_from": "Tuesday, 24 December 2019", "date_to": "Wednesday, 25 December 2019"},
+                {"date_from": "Friday, 27 December 2019", "date_to": ""},
+                {"date_from": "Saturday, 28 December 2019", "date_to": ""},
+                {"date_from": "Monday, 30 December 2019", "date_to": "Monday, 13 January 2020"}
             ]},
             {"year": "2020", "closed": [
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""}
+                {"date_from": "Friday, 3 April 2020", "date_to": ""},
+                {"date_from": "Saturday, 4 April 2020", "date_to": ""},
+                {"date_from": "Friday, 26 June 2020", "date_to": ""},
+                {"date_from": "Saturday, 27 June 2020", "date_to": ""},
+                {"date_from": "Monday, 29 June 2020", "date_to": "Monday, 13 July 2020"},
+                {"date_from": "Friday, 2 October 2020", "date_to": ""},
+                {"date_from": "Saturday, 3 October 2020", "date_to": ""},
+                {"date_from": "Wednesday, 25 November 2020", "date_to": ""},
+                {"date_from": "Thursday, 26 November 2020", "date_to": ""},
+                {"date_from": "Thursday, 24 December 2020", "date_to": "Friday, 25 December 2020"},
+                {"date_from": "Thursday, 31 December 2020", "date_to": ""}
+            ]},
+            {"year": "2021", "closed": [
+                {"date_from": "Friday, 1 January 2021", "date_to": ""},
+                {"date_from": "Saturday, 2 January 2021", "date_to": ""},
+                {"date_from": "Monday, 4 January 2021", "date_to": "Monday, 18 January 2021"}
             ]} 
         ],
-        "summary": "Rexburg is a nice little town",
-        "openweathermap_cityid" : "5605242"
+        "summary": "Heavenly Paradise",
+        "openweathermap_cityid" : "5855797"
     },
     {
         "address": {
-            "street": "750 S 2nd E",
+            "street": "250 E 400 S",
             "city": "St. George",
             "state_abbr": "UT",
             "state": "Utah",
-            "postal": "83440-5404",
+            "postal": "84770-3699",
             "country": "United States"
         },    
-        "phone": "208-656-0880",
-        "email": "email@idahofallstemple.org",
+        "phone": "435-673-3533",
+        "email": "email@stgeorgetemple.org",
         "services": [
             { "service" : "Clothing rental available"},
-            { "service" : "No cafeteria available"},
-            { "service" : "No patron housing available"},
+            { "service" : "Cafeteria available"},
+            { "service" : "Patron housing available"},
             { "service" : "Distribution center nearby"}
         ],
         "images" : {
             "small" : "stgeorge-temple-320w.jpg",
             "large" : "stgeorge-temple-635w.jpg",
-            "image_description" : "Married couple in front of the Rexburg Idaho Temple"
+            "image_description" : "Side view of the St. George Utah Temple"
         },
         "milestones" : [
-            { "date" : "12 December 2003", "title" : "Announced", "url_title" : "", "url": "" },
-            { "date" : "30 July 2005", "title" : "Groundbreaking", "url_title" : "", "url": "" },
-            { "date" : "10 February 2008", "title": "Dedicated", "url_title" : "dedicatory prayer", "url" : "https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple/prayer/2008-02-10" }
+            { "date" : "9 November 1871", "title" : "Announced", "url_title" : "", "url": "" },
+            { "date" : "9 November 1871", "title" : "Groundbreaking", "url_title" : "", "url": "" },
+            { "date" : "6 April 1877", "title": "Dedicated", "url_title" : "dedicatory prayer", "url" : "https://www.churchofjesuschrist.org/temples/details/st.-george-utah-temple/prayer/1877-04-06" },
+            { "date" : "11 November 1975", "title": "Rededicated", "url_title" : "dedicatory prayer", "url" : "https://www.churchofjesuschrist.org/temples/details/st.-george-utah-temple/prayer/1975-11-11" }
         ],
         "ordinance_schedule" : {
             "baptism": {
                 "church_groups": [
-                    {"time_from": "4:00 PM", "time_to": "6:00 PM", "info": "Appointments Only"}    
+                    {"time_from": "6:00 PM", "time_to": "8:00 PM", "info": "Appointments Only"}    
                 ],
-                "family_priority_time": [
-                    {"time_from": "6:00 PM", "time_to": "8:00 PM", "info": "Walk-ins and Appointments"} 
-                ]
+                "family_priority_time": []
             },
             "initiatory": [
-                { "time_from" : "6:00", "time_to": "8:00 PM", "info": "Walk-ins Only"}
+                { "time_from" : "7:00 AM", "time_to": "8:15 PM", "info": "Walk-ins and Appointments"}
             ],
             "endowment": [
-                { "start_time" : "6:00 AM", "info": "Walk-ins Only"},
-                { "start_time" : "6:45 AM", "info": "Walk-ins Only"},
-                { "start_time" : "7:30 AM", "info": "Walk-ins Only"},
-                { "start_time" : "8:15 AM", "info": "Walk-ins and Appointments"},
-                { "start_time" : "9:00 AM", "info": "Walk-ins and Appointments"},
-                { "start_time" : "9:45 AM", "info": "Walk-ins Only"},
-                { "start_time" : "10:30 AM", "info": "Walk-ins Only"},
-                { "start_time" : "11:15 AM", "info": "Walk-ins Only"},
-                { "start_time" : "12:00 PM", "info": "Walk-ins Only"},
-                { "start_time" : "12:45 PM", "info": "Walk-ins and Appointments"},
-                { "start_time" : "1:30 PM", "info": "Walk-ins Only"},
-                { "start_time" : "2:15 PM", "info": "Walk-ins Only"},
-                { "start_time" : "3:00 PM", "info": "Walk-ins and Appointments"},
-                { "start_time" : "3:45 PM", "info": "Walk-ins Only"},
-                { "start_time" : "4:30 PM", "info": "Walk-ins Only"},
-                { "start_time" : "5:15 PM", "info": "Walk-ins and Appointments"},
-                { "start_time" : "6:00 PM", "info": "Walk-ins Only"},
-                { "start_time" : "6:45 PM", "info": "Walk-ins Only"},
-                { "start_time" : "7:30 PM", "info": "Walk-ins and Appointments"}
+                { "start_time" : "6:00 AM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "6:40 AM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "7:20 AM", "info": "Walk-ins and Appointments - Samoan"},
+                { "start_time" : "8:00 AM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "8:40 AM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "9:20 AM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "10:00 AM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "10:40 AM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "11:20 AM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "12:00 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "12:40 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "1:20 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "2:00 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "2:40 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "3:20 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "4:00 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "4:40 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "5:20 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "6:00 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "6:40 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "7:20 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "8:00 PM", "info": "Walk-ins and Appointments"}
             ],
             "sealing": [
-                {"time_from": "7:00 AM", "time_to": "8:00 PM", "info": "Walk-ins and Appointments"}
+                {"time_from": "7:20 AM", "time_to": "8:40 PM", "info": "Walk-ins and Appointments"}
             ]
         },
         "closures" : [
             {"year": "2019", "closed": [
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""}
-            ]},
-            {"year": "2020", "closed": [
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""},
-                {"date_from": "", "date_to": ""}
-            ]} 
+                {"date_from": "Wednesday, 24 July 2019", "date_to": ""},
+                {"date_from": "Monday, 2 September 2019", "date_to": ""},
+                {"date_from": "Monday, 9 September 2019", "date_to": "Saturday, 21 September 2019"},
+                {"date_from": "Saturday, 5 October 2019", "date_to": ""},
+                {"date_from": "Monday, 4 November 2019", "date_to": "Friday, 4 November 2022"}
+            ]}
         ],
-        "summary": "Rexburg is a nice little town",
-        "openweathermap_cityid" : "5605242"
+        "summary": "Beautiful dessert.",
+        "openweathermap_cityid" : "5546220"
     }
     
 ]}
