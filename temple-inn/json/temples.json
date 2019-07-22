@@ -173,6 +173,182 @@
         ],
         "summary": "Rexburg is a nice little town",
         "openweathermap_cityid" : "5605242"
+    },
+    {
+        "address": {
+            "street": "750 S 2nd E",
+            "city": "Idaho Falls",
+            "state_abbr": "ID",
+            "state": "Idaho",
+            "postal": "83440-5404",
+            "country": "United States"
+        },    
+        "phone": "208-656-0880",
+        "email": "email@idahofallstemple.org",
+        "services": [
+            { "service" : "Clothing rental available"},
+            { "service" : "No cafeteria available"},
+            { "service" : "No patron housing available"},
+            { "service" : "Distribution center nearby"}
+        ],
+        "images" : {
+            "small" : "rexburg-temple-320w.jpg",
+            "large" : "rexburg-temple-635w.jpg",
+            "image_description" : "Married couple in front of the Rexburg Idaho Temple"
+        },
+        "milestones" : [
+            { "date" : "12 December 2003", "title" : "Announced", "url_title" : "", "url": "" },
+            { "date" : "30 July 2005", "title" : "Groundbreaking", "url_title" : "", "url": "" },
+            { "date" : "10 February 2008", "title": "Dedicated", "url_title" : "dedicatory prayer", "url" : "https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple/prayer/2008-02-10" }
+        ],
+        "ordinance_schedule" : {
+            "baptism": {
+                "church_groups": [
+                    {"time_from": "4:00 PM", "time_to": "6:00 PM", "info": "Appointments Only"}    
+                ],
+                "family_priority_time": [
+                    {"time_from": "6:00 PM", "time_to": "8:00 PM", "info": "Walk-ins and Appointments"} 
+                ]
+            },
+            "initiatory": [
+                { "time_from" : "6:00", "time_to": "8:00 PM", "info": "Walk-ins Only"}
+            ],
+            "endowment": [
+                { "start_time" : "6:00 AM", "info": "Walk-ins Only"},
+                { "start_time" : "6:45 AM", "info": "Walk-ins Only"},
+                { "start_time" : "7:30 AM", "info": "Walk-ins Only"},
+                { "start_time" : "8:15 AM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "9:00 AM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "9:45 AM", "info": "Walk-ins Only"},
+                { "start_time" : "10:30 AM", "info": "Walk-ins Only"},
+                { "start_time" : "11:15 AM", "info": "Walk-ins Only"},
+                { "start_time" : "12:00 PM", "info": "Walk-ins Only"},
+                { "start_time" : "12:45 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "1:30 PM", "info": "Walk-ins Only"},
+                { "start_time" : "2:15 PM", "info": "Walk-ins Only"},
+                { "start_time" : "3:00 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "3:45 PM", "info": "Walk-ins Only"},
+                { "start_time" : "4:30 PM", "info": "Walk-ins Only"},
+                { "start_time" : "5:15 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "6:00 PM", "info": "Walk-ins Only"},
+                { "start_time" : "6:45 PM", "info": "Walk-ins Only"},
+                { "start_time" : "7:30 PM", "info": "Walk-ins and Appointments"}
+            ],
+            "sealing": [
+                {"time_from": "7:00 AM", "time_to": "8:00 PM", "info": "Walk-ins and Appointments"}
+            ]
+        },
+        "closures" : [
+            {"year": "2019", "closed": [
+                {"date_from": "Saturday, 27 July 2019", "date_to": "Saturday, 27 July 2019"},
+                {"date_from": "Monday, 2 September 2019", "date_to": "Monday, 16 September 2019"},
+                {"date_from": "Saturday, 5 October 2019", "date_to": "Saturday, 5 October 2019"},
+                {"date_from": "Wednesday, 27 November 2019", "date_to": "Thursday, 28 November 2019"},
+                {"date_from": "Tuesday, 24 December 2019", "date_to": "Wednesday, 25 December 2019"},
+                {"date_from": "Tuesday, 31 December 2019", "date_to": "Wednesday, 1 January 2020"}
+            ]},
+            {"year": "2020", "closed": [
+                {"date_from": "Saturday, 4 April 2020", "date_to": "Saturday, 4 April 2020"},
+                {"date_from": "Monday, 13 April 2020", "date_to": "Monday, 27 April 2020"},
+                {"date_from": "Saturday, 4 July 2020", "date_to": "Saturday, 4 July 2020"},
+                {"date_from": "Saturday, 25 July 2020", "date_to": "Saturday, 25 July 2020"},
+                {"date_from": "Monday, 24 August 2020", "date_to": "Monday, 14 September 2020"},
+                {"date_from": "Saturday, 3 October 2020", "date_to": "Saturday, 3 October 2020"},
+                {"date_from": "Wednesday, 25 November 2020", "date_to": "Thursday, 26 November 2020"},
+                {"date_from": "Thursday, 24 December 2020", "date_to": "Friday, 25 December 2020"},
+                {"date_from": "Thursday, 31 December 2020", "date_to": "Friday, 1 January 2021"}
+            ]} 
+        ],
+        "summary": "Rexburg is a nice little town",
+        "openweathermap_cityid" : "5605242"
+    },
+    {
+        "address": {
+            "street": "750 S 2nd E",
+            "city": "Idaho Falls",
+            "state_abbr": "ID",
+            "state": "Idaho",
+            "postal": "83440-5404",
+            "country": "United States"
+        },    
+        "phone": "208-656-0880",
+        "email": "email@idahofallstemple.org",
+        "services": [
+            { "service" : "Clothing rental available"},
+            { "service" : "No cafeteria available"},
+            { "service" : "No patron housing available"},
+            { "service" : "Distribution center nearby"}
+        ],
+        "images" : {
+            "small" : "rexburg-temple-320w.jpg",
+            "large" : "rexburg-temple-635w.jpg",
+            "image_description" : "Married couple in front of the Rexburg Idaho Temple"
+        },
+        "milestones" : [
+            { "date" : "12 December 2003", "title" : "Announced", "url_title" : "", "url": "" },
+            { "date" : "30 July 2005", "title" : "Groundbreaking", "url_title" : "", "url": "" },
+            { "date" : "10 February 2008", "title": "Dedicated", "url_title" : "dedicatory prayer", "url" : "https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple/prayer/2008-02-10" }
+        ],
+        "ordinance_schedule" : {
+            "baptism": {
+                "church_groups": [
+                    {"time_from": "4:00 PM", "time_to": "6:00 PM", "info": "Appointments Only"}    
+                ],
+                "family_priority_time": [
+                    {"time_from": "6:00 PM", "time_to": "8:00 PM", "info": "Walk-ins and Appointments"} 
+                ]
+            },
+            "initiatory": [
+                { "time_from" : "6:00", "time_to": "8:00 PM", "info": "Walk-ins Only"}
+            ],
+            "endowment": [
+                { "start_time" : "6:00 AM", "info": "Walk-ins Only"},
+                { "start_time" : "6:45 AM", "info": "Walk-ins Only"},
+                { "start_time" : "7:30 AM", "info": "Walk-ins Only"},
+                { "start_time" : "8:15 AM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "9:00 AM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "9:45 AM", "info": "Walk-ins Only"},
+                { "start_time" : "10:30 AM", "info": "Walk-ins Only"},
+                { "start_time" : "11:15 AM", "info": "Walk-ins Only"},
+                { "start_time" : "12:00 PM", "info": "Walk-ins Only"},
+                { "start_time" : "12:45 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "1:30 PM", "info": "Walk-ins Only"},
+                { "start_time" : "2:15 PM", "info": "Walk-ins Only"},
+                { "start_time" : "3:00 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "3:45 PM", "info": "Walk-ins Only"},
+                { "start_time" : "4:30 PM", "info": "Walk-ins Only"},
+                { "start_time" : "5:15 PM", "info": "Walk-ins and Appointments"},
+                { "start_time" : "6:00 PM", "info": "Walk-ins Only"},
+                { "start_time" : "6:45 PM", "info": "Walk-ins Only"},
+                { "start_time" : "7:30 PM", "info": "Walk-ins and Appointments"}
+            ],
+            "sealing": [
+                {"time_from": "7:00 AM", "time_to": "8:00 PM", "info": "Walk-ins and Appointments"}
+            ]
+        },
+        "closures" : [
+            {"year": "2019", "closed": [
+                {"date_from": "Saturday, 27 July 2019", "date_to": "Saturday, 27 July 2019"},
+                {"date_from": "Monday, 2 September 2019", "date_to": "Monday, 16 September 2019"},
+                {"date_from": "Saturday, 5 October 2019", "date_to": "Saturday, 5 October 2019"},
+                {"date_from": "Wednesday, 27 November 2019", "date_to": "Thursday, 28 November 2019"},
+                {"date_from": "Tuesday, 24 December 2019", "date_to": "Wednesday, 25 December 2019"},
+                {"date_from": "Tuesday, 31 December 2019", "date_to": "Wednesday, 1 January 2020"}
+            ]},
+            {"year": "2020", "closed": [
+                {"date_from": "Saturday, 4 April 2020", "date_to": "Saturday, 4 April 2020"},
+                {"date_from": "Monday, 13 April 2020", "date_to": "Monday, 27 April 2020"},
+                {"date_from": "Saturday, 4 July 2020", "date_to": "Saturday, 4 July 2020"},
+                {"date_from": "Saturday, 25 July 2020", "date_to": "Saturday, 25 July 2020"},
+                {"date_from": "Monday, 24 August 2020", "date_to": "Monday, 14 September 2020"},
+                {"date_from": "Saturday, 3 October 2020", "date_to": "Saturday, 3 October 2020"},
+                {"date_from": "Wednesday, 25 November 2020", "date_to": "Thursday, 26 November 2020"},
+                {"date_from": "Thursday, 24 December 2020", "date_to": "Friday, 25 December 2020"},
+                {"date_from": "Thursday, 31 December 2020", "date_to": "Friday, 1 January 2021"}
+            ]} 
+        ],
+        "summary": "Rexburg is a nice little town",
+        "openweathermap_cityid" : "5605242"
     }
     
 ]}
