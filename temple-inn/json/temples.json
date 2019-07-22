@@ -177,9 +177,9 @@
     {
         "address": {
             "street": "750 S 2nd E",
-            "city": "Idaho Falls",
-            "state_abbr": "ID",
-            "state": "Idaho",
+            "city": "Laie",
+            "state_abbr": "HI",
+            "state": "Hawaii",
             "postal": "83440-5404",
             "country": "United States"
         },    
@@ -265,9 +265,9 @@
     {
         "address": {
             "street": "750 S 2nd E",
-            "city": "Idaho Falls",
-            "state_abbr": "ID",
-            "state": "Idaho",
+            "city": "Manhatton",
+            "state_abbr": "NY",
+            "state": "New York",
             "postal": "83440-5404",
             "country": "United States"
         },    
