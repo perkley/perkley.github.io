@@ -104,8 +104,12 @@ aside.action-call div {
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-    background-color: rgba(171, 84, 82, 0.9);
+    /* background-color: rgba(171, 84, 82, 0.9); */
     border-radius: 10px;    
+}
+
+.background-red {
+    background-color: rgba(171, 84, 82, 0.9);
 }
 
 
@@ -131,4 +135,24 @@ section.home aside {
         "info summary"
         "detail detail";
     /* grid-gap: 20px;  */
+}
+
+/* SERVICES */
+.service-container-reception, .service-container-missionary {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* CONTACT PAGE */
+
+.contact-container {
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-container iframe {
+    /* width: 100%; */
+    height: 90.5%;
+    background-color: #c6c8c3;
+    padding: 5px;
+    border-radius: 10px;
 }

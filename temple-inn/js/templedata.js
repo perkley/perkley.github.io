@@ -9,7 +9,6 @@ request.send();
 
 request.onload = function() {
     let templeData = request.response;
-    // console.log(templeData);
     showTempleData(templeData);
 }
 
@@ -22,16 +21,16 @@ function showTempleData(jsonObj) {
 
     if (getUrlParameter('tid')) {
         let templeId = getUrlParameter('tid');
-        createTempleInfo(temples, templeId, false);
+        createTempleInfo(temples, templeId, 1, false);
     } else if (dataLimit == 1) {
         //Show a random temple information
         let min = 0; 
         let max = temples.length;  
         var random = Math.floor(Math.random() * (+max - +min)) + +min;
-        createTempleInfo(temples, random, summaryOnly);
+        createTempleInfo(temples, random, dataLimit, summaryOnly);
     } else {
         for (let i = 0; i < temples.length; i++) {
-            createTempleInfo(temples, i, summaryOnly);
+            createTempleInfo(temples, i, dataLimit, summaryOnly);
         }
     }
 }
@@ -43,7 +42,7 @@ function getUrlParameter(name) {
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
-function createTempleInfo(temples, idx, summaryOnly) {
+function createTempleInfo(temples, idx, dataLimit, summaryOnly) {
 
     let templeInfoContainer = (summaryOnly) ? document.querySelector('.temple-summary-container') : document.querySelector('.temple-detail-container');          
 
@@ -167,8 +166,10 @@ function createTempleInfo(temples, idx, summaryOnly) {
             tStr += jBaptGroup[s].time_from + ' - ' + jBaptGroup[s].time_to +
                 ' - ' + jBaptGroup[s].info + br;
         }
-        tPBaptistry.innerHTML =  "<strong>Baptistry Schedule</strong> <em>Church Groups</em>" + br + tStr;
-        tDivDetail.appendChild(tPBaptistry);
+        if (jBaptGroup.length > 0) {
+            tPBaptistry.innerHTML =  "<strong>Baptistry Schedule</strong> <em>Church Groups</em>" + br + tStr;
+            tDivDetail.appendChild(tPBaptistry);
+        }
 
         //Family Priority Time
         let tPBaptistryF = document.createElement('p');
@@ -178,9 +179,11 @@ function createTempleInfo(temples, idx, summaryOnly) {
             tStr += jBaptFamily[s].time_from + ' - ' + jBaptFamily[s].time_to +
                 ' - ' + jBaptFamily[s].info + br;
         }
-        tPBaptistryF.innerHTML =  "<strong>Baptistry Schedule</strong> <em>Family Priority Time</em>" + br + tStr;
-        tDivDetail.appendChild(tPBaptistryF);
-        
+        if (jBaptFamily.length > 0) {
+            tPBaptistryF.innerHTML =  "<strong>Baptistry Schedule</strong> <em>Family Priority Time</em>" + br + tStr;
+            tDivDetail.appendChild(tPBaptistryF);
+        }
+
         //Ordinance: Initiatory
         let tPInitiatory = document.createElement('p');
         tStr = '';
@@ -236,7 +239,9 @@ function createTempleInfo(temples, idx, summaryOnly) {
             let tLIClosure = [];
             for (c=0; c < jClosureData.length; c++) {
                 tLIClosure[c] = document.createElement('li'); 
-                tStr = jClosureData[c].date_from + ' - ' + jClosureData[c].date_to;
+                if (jClosureData[c].date_to != '')
+                    tStr = jClosureData[c].date_from + ' - ' + jClosureData[c].date_to;
+                else tStr = jClosureData[c].date_from;
                 tLIClosure[c].textContent = tStr;
                 tULClosures.appendChild(tLIClosure[c]);
             }
@@ -283,6 +288,9 @@ function createTempleInfo(temples, idx, summaryOnly) {
     // ******** CREATE "SUMMARY" DIV ************************
     if (summaryOnly) {
         var tDIVFlex = document.createElement('div');
+        if (dataLimit == 1) {
+            tDIVFlex.setAttribute("class", "image-full");
+        }
     }
 
     objContainer = (summaryOnly) ? tDIVFlex : templeInfoContainer;
