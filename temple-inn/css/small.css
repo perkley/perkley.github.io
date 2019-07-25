@@ -179,7 +179,6 @@ nav ul {
 }
 
 .dropdown {
-    display: static;
     padding-left: 30px;
 }
 
@@ -444,7 +443,7 @@ aside.service-container {
     margin: 5px;
 }
 
-aside.service-container section {
+aside.service-container div {
     width: calc(50% - 10px);
     margin: 5px;
     background-color: #ab5452;
@@ -452,7 +451,7 @@ aside.service-container section {
 }
 
 @media screen and (max-width: 430px) {
-    aside.service-container section {
+    aside.service-container div {
         width: 100%;
     }
 }

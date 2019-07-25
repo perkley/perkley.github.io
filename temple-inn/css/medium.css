@@ -14,7 +14,6 @@ header, main {
     height: unset;
     width: unset !important;
     position: static;
-    display: static;
     background-color: unset;
     transition: 0s;
     padding-top: 0px;
@@ -34,7 +33,6 @@ header, main {
     text-decoration: none;
     font-size: 1.2rem;
     color: #6a6b1e;
-    display: static;
     transition: none;
     width: 100%;
   }
