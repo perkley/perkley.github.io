@@ -80,6 +80,7 @@ header, main {
 .active {
     background-color: unset;
 }
+
 .active a {
     color: black !important;
 }
@@ -89,11 +90,9 @@ header, main {
 }
 
 
-
 aside.action-call {
     position: relative;
     margin: 0 auto;
-    /* top: -200px; */
     top: 20px;
 }
 
@@ -104,7 +103,6 @@ aside.action-call div {
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-    /* background-color: rgba(171, 84, 82, 0.9); */
     border-radius: 10px;    
 }
 
@@ -127,14 +125,12 @@ section.home aside {
 
 /* TEMPLE DETAIL */
 .temple-detail-container { 
-    /* display: grid; */
     grid-template-columns: 2fr 1fr;
     grid-template-areas: 
         "title pic"
         "info pic"
         "info summary"
         "detail detail";
-    /* grid-gap: 20px;  */
 }
 
 /* SERVICES */
@@ -150,7 +146,6 @@ section.home aside {
 }
 
 .contact-container iframe {
-    /* width: 100%; */
     height: 90.5%;
     background-color: #c6c8c3;
     padding: 5px;

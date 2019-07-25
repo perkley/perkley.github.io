@@ -54,55 +54,54 @@
                     <div class="title"><h1>Reserve Your Room Today</h1></div>
                     <div class="motto">We guarantee you will love it!</div>
                 </div>
-              
+                
+                <div class="note">
+                    <strong>Note:</strong> You must be willing to abide by our terms and policies in order to make a reservation.
+                </div>
+
                 <div class="form-container">
                     <form method="get" action="thanks.html">
-                        
-                        <fieldset>
-                            <legend>Where and when would you like to stay?</legend>
-                            
-                            <label for="tLocation" class="top">Temple Inn & Suite Location: 
-                            <select id="tLocation" name="tLocation" required>
-                                <option selected disabled value="">Select Suite...</option>
-                                <option value="idahofalls">Idaho Falls, Idaho</option>
-                                <option value="laie">Laie, Hawaii</option>
-                                <option value="rexburg">Rexburg, Idaho</option>
-                                <option value="stgeorge">St. George, Utah</option>
-                            </select>
-                            </label>
+                        <div class="flex-form">
+                            <div><h3>Where and when would you like to stay?</h3></div>
+                            <div>
+                                <label for="tLocation" class="top">Temple Inn & Suite Location: 
+                                <select id="tLocation" name="tLocation" required>
+                                    <option selected disabled value="">Select Suite...</option>
+                                    <option value="idahofalls">Idaho Falls, Idaho</option>
+                                    <option value="laie">Laie, Hawaii</option>
+                                    <option value="rexburg">Rexburg, Idaho</option>
+                                    <option value="stgeorge">St. George, Utah</option>
+                                </select>
+                                </label>
+                            </div>
+                            <div><label for="date-checkin" class="top">Check-in Date: <input type="date" id="date-checkin" name="date-checkin" placeholder="mm/dd/yyyy" required></label></div>
+                            <div><label for="stay-days" class="top">Number of days: <input type="number" id="stay-days" name="stay-days" placeholder="Enter number of days" min="1" required></label></div>
+                            <div>
+                                <label for="tLocation" class="top">Type of Room: 
+                                <select id="tLocation" name="tLocation" required>
+                                    <option selected disabled value="">Select Room Type...</option>
+                                    <option value="rt1">Studio, 1 King, Sofa Bed</option>
+                                    <option value="rt1">Studio, 2 Queen, Sofa Bed</option>
+                                    <option value="rt1">1 Bedroom Suite, 1 King, Sofa Bed</option>
+                                    <option value="rt1">2 Bedroom Suite, Bedroom 1: 1 King, Bedroom 2: 1 King, Sofa Bed, Bathrooms: 2</option>
+                                </select>
+                                </label>
+                            </div>
+                        </div>
 
-                            <label for="date-checkin" class="top">Check-in Date: <input type="date" id="date-checkin" name="date-checkin" placeholder="mm/dd/yyyy" required></label>
-                            
-                            <label for="stay-days" class="top">Number of days: <input type="number" id="stay-days" name="stay-days" placeholder="Enter number of days" min="1" required></label>
-                            
-                            <label for="tLocation" class="top">Type of Room: 
-                            <select id="tLocation" name="tLocation" required>
-                                <option selected disabled value="">Select Room Type...</option>
-                                <option value="rt1">Studio, 1 King, Sofa Bed</option>
-                                <option value="rt1">Studio, 2 Queen, Sofa Bed</option>
-                                <option value="rt1">1 Bedroom Suite, 1 King, Sofa Bed</option>
-                                <option value="rt1">2 Bedroom Suite, Bedroom 1: 1 King, Bedroom 2: 1 King, Sofa Bed, Bathrooms: 2</option>
-                            </select>
-                            </label>
-                        </fieldset>
-                        
-                        <fieldset>
-                            <legend>Registrant Information</legend>
-                            <label for="name" class="top">Full Name: <input type="text" id="name" name="name" required pattern="[a-zA-Z\s]{5,}"></label>
-                            <label for="email" class="top">Email: <input type="email" id="email" name="email" placeholder="email@yahoo.com" required></label>
-                            <label for="phone" class="top">Phone Number: <input type="tel" id="phone" name="phone" required></label>
-                            <label for="state" class="top">Home State or Country: <input type="text" id="state" name="state" required></label>
-                            
-                            
-                        </fieldset>
+                        <div class="flex-form">
+                            <div><h3>Registrant Information</h3></div>
+                            <div><label for="name" class="top">Full Name: <input type="text" id="name" name="name" required pattern="[a-zA-Z\s]{5,}"></label></div>
+                            <div><label for="email" class="top">Email: <input type="email" id="email" name="email" placeholder="email@yahoo.com" required></label></div>
+                            <div><label for="phone" class="top">Phone Number: <input type="tel" id="phone" name="phone" required></label></div>
+                            <div><label for="state" class="top">Home State or Country: <input type="text" id="state" name="state" required></label></div>
+                        </div>
 
-                        <fieldset>
-                            <legend>Complete Reservation</legend>
-                            <label for="comments" class="top">Additional Information or Comments <textarea id="comments" name="comments"></textarea></label>
-
-                            <input type="submit" value="Confirm Reservation" class="button-text">
-                        </fieldset>
-
+                        <div class="flex-form">
+                            <div><h3>Complete Reservation</h3></div>
+                            <div><label for="comments" class="top">Additional Information or Comments <textarea id="comments" name="comments"></textarea></label></div>
+                            <div><input type="submit" value="Confirm Reservation" class="button-text"></div>
+                        </div>
                         
                     </form>
                 </div>
